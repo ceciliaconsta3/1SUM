@@ -1,2 +1,11 @@
-.sass-cache/
+### SCSS ###
 *.css.map
+.sass-cache/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
