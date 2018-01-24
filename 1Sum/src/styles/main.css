@@ -4,7 +4,7 @@ body {
   min-height: 100vh;
   min-height: 100%;
   /* fallback */
-}
+ } 
 
 p {
   font-family: 'Lora', serif;
@@ -92,7 +92,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .button {
   background-color: #3A9BFC;
-  /* Green */
   border: none;
   color: white;
   padding: 5px 32px;
@@ -105,5 +104,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .lora {
   font-family: 'Lora', serif;
-}
+ } 
 /*# sourceMappingURL=main.css.map */
+
+
+
