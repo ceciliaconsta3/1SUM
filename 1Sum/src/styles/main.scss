@@ -1,9 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Lora');
 
+
+@keyframes loader-spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
+/* Color Pallette*/
+$tan: #e1cca2;
+$grey: #e7e7e7;
+$off-white: #f7f7f7;
+$blue: #3A9BFC;
+
+
+* {
+  box-sizing:  border-box;
+}
 body {
   min-height: 100vh;
   min-height: 100%; /* fallback */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: stretch;
+  flex-wrap: nowrap;
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: 'Nunito', sans-serif;
 }
 
 p {
@@ -13,11 +44,7 @@ p {
 .album {
   padding-top: 0rem;
   padding-bottom: 0rem;
-  background-color: #f7f7f7;
-}
-
-.row {
-  
+  background-color: $off-white;
 }
 
 .row-heading {
@@ -25,8 +52,8 @@ p {
   width: 100%;
   padding: .75rem;
   margin: 0 auto;
-  background: #3A9BFC;
-  color: #fff;
+  background: $blue;
+  color: white;
   font-family: 'Nunito', sans-serif;
 }
 .row-note {
@@ -34,8 +61,8 @@ p {
   width: 100%;
   padding: .25rem;
   margin: 0 auto;
-  background: #E1CCA2;
-  color: #000;
+  background: $tan;
+  color: black;
 }
 
 .row-note p {
@@ -43,7 +70,7 @@ p {
   width: 100%;
   padding: 0px;
   margin: 0 auto;
-  color: #000;
+  color: black;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -57,7 +84,12 @@ p {
 }
 
 .alt {
-  background: #e7e7e7;
+  background: $grey;
+}
+
+.card-template {
+  visibility: hidden;
+  justify-content: center;
 }
 
 .card > img {
@@ -73,7 +105,7 @@ p {
 
 .card-text {
   font-size: 85%;
-  color: #000;
+  color: black;
   text-align: left;
   border: 0px;
   line-height: 20px;
@@ -82,19 +114,42 @@ p {
 
 .card-stats {
   font-size: 65%;
-  color: #000;
+  color: black;
   text-align: left;
   border: 0px;
   line-height: 0px;
   font-family: 'Nunito', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Nunito', sans-serif;
+header {
+  background-color: $blue;
+  color: white;
+  width: 100vw;
+  // fallback
+  width: 100%; 
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  height: 60px;
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  position: fixed;
+}
+
+.header-button {
+  height: 20px;
+  width: 30px;
+  margin-right: 16px;
+  overflow: visible;
+}
+
+marquee {
+  background-color: $tan;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
 }
 
 .button {
-    background-color: #3A9BFC; /* Green */
+    background-color: $blue;
     border: none;
     color: white;
     padding: 5px 32px;
@@ -104,6 +159,19 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.75rem;
     float: right;
 }
+
+.loader {
+  left: 50%;
+  top: 50%;
+  border: 8px solid $grey;
+  border-top: 8px solid $blue;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin: 7% auto;
+  animation: loader-spin 1s linear infinite;
+}
+
 
 .lora {
   font-family: 'Lora', serif;

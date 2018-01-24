@@ -24,48 +24,46 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- APP wrapper -->
-        <header>
-          <h1 class="header_title">1Sum</h1>
-        </header>
+      <!-- APP wrapper -->
+      <header class="header">
+        <h1 class="header-title">1 Sum</h1>
+        <button id="nav-button" class="header-button" aria-label="Navigation">Nav</button>
+        <button id="date-button" class="header-button" aria-label="Date">Calendar</button>
+      </header>
+      <marquee>Daily Team Updates | Announcements</marquee>
 
-   <main role="main">
-            <div class="album text-muted">
-              <div class="container">
+      <!-- Loading -->
+      <div class="loader"></div> 
+
+
+      <main role="main">
+          <div class="card-template" >
+            <div class="container">
+              <div class="row">
+                <div class="card">
+                  <p class="card-text">Redesigned the front-end of client x's website.</p>
+                  <p class="card-stats">Tim @ 7pm EST</p>
+                </div>
+            </div><!-- Close Row -->
+
+              <div class="row">
+                <div class="card alt">
+                  <p class="card-text">Refactored the back-end code for project X.</p>
+                  <p class="card-stats">Igor @ 7:30pm</p>
+                </div>
+              </div><!-- Close Row -->
+              <div class="row">
+                <div class="card">
+                  <p class="card-text">
+                      <textarea class="lora" rows="4" cols="94">Update Text Here</textarea>
+                      <button class="button">Submit</button>
+                    </p>
+                </div>
+              </div><!-- Close Row -->
+            </div><!-- Close Container -->
+          </div><!-- Close Album -->
+      </main> 
       
-                <div class="row">
-                  <div class="row-heading"><h4>1 Sum (Daily Team Updates)</h4>
-                    </div>
-                </div>
-                <div class="row">
-                  <div class="row-note"><p>Daily Team Updates</p>
-                    </div>
-                </div>
-                <div class="row">
-                  <div class="card">
-                    <p class="card-text">Redesigned the front-end of client x's website.</p>
-                    <p class="card-stats">Tim @ 7pm EST</p>
-                  </div>
-                </div><!-- Close Row -->
-
-                   
-                <div class="row">
-                  <div class="card alt">
-                    <p class="card-text">Refactored the back-end code for project X.</p>
-                    <p class="card-stats">Igor @ 7:30pm</p>
-                  </div>
-                </div><!-- Close Row -->
-                <div class="row">
-                  <div class="card">
-                    <p class="card-text">
-                        <textarea class="lora" rows="4" cols="94">Update Text Here</textarea>
-                        <button class="button">Submit</button>
-                     </p>
-                  </div>
-                </div><!-- Close Row -->
-              </div><!-- Close Container -->
-            </div><!-- Close Album -->
-          </main> 
-          <script src="scripts/main.js"></script>
+      <script src="scripts/main.js"></script>
     </body>
 </html>
