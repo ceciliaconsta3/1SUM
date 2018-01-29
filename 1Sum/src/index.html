@@ -14,12 +14,13 @@
     <title>1Sum - Remote Team Daily Updates</title>
 
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 
 <body>
@@ -30,48 +31,29 @@
     <!-- APP wrapper -->
     <header class="header">
         <h1 class="header-title">1 Sum</h1>
-        <button id="nav-button" class="header-button" aria-label="Navigation">Nav</button>
-        <button id="date-button" class="header-button" aria-label="Date">Calendar</button>
     </header>
-    <marquee>Daily Team Updates | Announcements</marquee>
 
     <!-- Loading Indicator-->
     <div class="loader"></div>
 
-    <!-- Cards: Data goes here-->
+    <!-- Main-->
     <main role="main">
-        <div class="card-template">
-            <div class="container">
-                <div class="row">
-                    <div class="card">
-                        <p class="card-text">Redesigned the front-end of client x's website.</p>
-                        <p class="card-stats">Tim @ 7pm EST</p>
-                    </div>
-                </div>
-                <!-- Close Row -->
-
-                <div class="row">
-                    <div class="card alt">
-                        <p class="card-text">Refactored the back-end code for project X.</p>
-                        <p class="card-stats">Igor @ 7:30pm</p>
-                    </div>
-                </div>
-                <!-- Close Row -->
-                <div class="row">
-                    <div class="card">
-                        <p class="card-text">
-                            <textarea class="lora" rows="4" cols="94">Update Text Here</textarea>
-                            <button class="button">Submit</button>
-                        </p>
-                    </div>
-                </div>
-                <!-- Close Row -->
-            </div>
-            <!-- Close Container -->
-        </div>
-        <!-- Close Album -->
+      <div class="container-fluid"></div>
     </main>
 
+    <!-- Dialog Container: add New Cards here
+    <div class="note-container">
+      <div class="note"></div>
+    </div> -->
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">
+        Footer content here -,
+      </span>
+    </div>
+  </footer>
+    
     <script src="scripts/main.js"></script>
 </body>
 
