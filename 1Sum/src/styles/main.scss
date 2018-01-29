@@ -19,6 +19,7 @@ $blue: #3A9BFC;
   box-sizing:  border-box;
 }
 body {
+  background-color: $off-white;
   min-height: 100vh;
   min-height: 100%; /* fallback */
   display: flex;
@@ -129,7 +130,7 @@ header {
   width: 100%; 
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   height: 60px;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 18px;
   display: flex;
   position: fixed;
@@ -142,10 +143,40 @@ header {
   overflow: visible;
 }
 
+.header .header-button {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  text-indent: -30000px;
+  overflow: hidden;
+  opacity: 0.54;
+  -webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+  transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+.main {
+  padding-top: 60px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
+
+
 marquee {
   background-color: $tan;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   visibility: hidden;
+}
+
+.btn-group {
+  position: absolute;
+  right: 30px;
+  margin: 10px;
 }
 
 .button {
