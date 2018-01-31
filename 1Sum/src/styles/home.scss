@@ -1,3 +1,19 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    1Sum
+Version:    1.0
+Last change:    1/30/18 [fixed Float bug, vf]
+Assigned to:    Cecilia C Constantine
+Primary use:    Teams 
+-------------------------------------------------------------------*/
+
+
+// @import "reset.css";
+// @import "layout.css";
+// @import "colors.css";
+// @import "typography.css";
+// @import "main.css";
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Lora');
 
@@ -40,15 +56,30 @@ p {
   font-family: 'Lora', serif;
 }
 
-header {
+main {
+  // height: 100vh;
+  // width: 100vw;
   background-color: $blue;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+header {
   color: white;
   width: 100vw;
   // fallback
   width: 100%; 
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
-  height: 60px;
   padding: 10px 20px;
   font-size: 18px;
   display: flex;
 }
+
+.social-icons {
+  color: $blue;
+  float: right;
+}
+  ul li a {
+    padding: 15px;
+  }
+  li {
+    text-decoration: none;
+    display: inline;
+  }
