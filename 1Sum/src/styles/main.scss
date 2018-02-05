@@ -1,9 +1,21 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    1Sum
+Version:    1.0
+Last change:    1/30/18 [fixed Float bug, vf]
+Assigned to:    Cecilia C Constantine
+Primary use:    Teams 
+-------------------------------------------------------------------*/
+
+
 /** 
 * When watching a directory, the watcher will compile all files not prefixed with an underscore.
 * Those files are partials and are just used for breaking up scss into digestible snippets for importation
 */
-
 @import "components/_buttons.scss";
 @import "helpers/_variables.scss";
+@import "layout/_footer.scss";
 @import "pages/_cover.scss";
-
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Lora');

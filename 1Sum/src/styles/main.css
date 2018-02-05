@@ -1,7 +1,18 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    1Sum
+Version:    1.0
+Last change:    1/30/18 [fixed Float bug, vf]
+Assigned to:    Cecilia C Constantine
+Primary use:    Teams 
+-------------------------------------------------------------------*/
 /** 
 * When watching a directory, the watcher will compile all files not prefixed with an underscore.
 * Those files are partials and are just used for breaking up scss into digestible snippets for importation
 */
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Lora");
 .button {
   background-color: #3A9BFC;
   border: none;
@@ -46,19 +57,19 @@
 }
 
 /* Color Pallette*/
-/*
- * Globals
- */
-/* Links */
+/***** FOOTER *****/
+footer {
+  text-align: center;
+}
+
+/***** LINKS *****/
 a,
 a:focus,
 a:hover {
   color: #fff;
 }
 
-/*
- * Base structure
- */
+/***** GENERAL *****/
 html,
 body {
   height: 100%;
@@ -81,9 +92,7 @@ body {
   max-width: 42em;
 }
 
-/*
- * Header
- */
+/***** HEADER *****/
 .masthead {
   margin-bottom: 2rem;
 }
@@ -123,17 +132,8 @@ body {
   }
 }
 
-/*
- * Cover
- */
+/***** COVER *****/
 .cover {
   padding: 0 1.5rem;
-}
-
-/*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, 0.5);
 }
 /*# sourceMappingURL=main.css.map */
