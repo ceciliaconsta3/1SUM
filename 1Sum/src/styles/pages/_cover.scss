@@ -1,18 +1,13 @@
-/*
- * Globals
- */
-
-/* Links */
+/***** LINKS *****/
 a,
 a:focus,
 a:hover {
   color: #fff;
 }
 
-/*
- * Base structure
- */
 
+
+/***** GENERAL *****/
 html,
 body {
   height: 100%;
@@ -36,9 +31,8 @@ body {
 }
 
 
-/*
- * Header
- */
+
+/***** HEADER *****/
 .masthead {
   margin-bottom: 2rem;
 }
@@ -79,17 +73,7 @@ body {
 }
 
 
-/*
- * Cover
- */
+/***** COVER *****/
 .cover {
   padding: 0 1.5rem;
-}
-
-
-/*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
 }
