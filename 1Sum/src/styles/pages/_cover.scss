@@ -10,8 +10,7 @@ a:hover {
 /***** GENERAL *****/
 html,
 body {
-  height: 100%;
-  background: linear-gradient(to right,#3A9BFC, #107895);
+  @include cool-background;
 }
 
 body {

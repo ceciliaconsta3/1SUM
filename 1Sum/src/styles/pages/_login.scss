@@ -1,7 +1,6 @@
-html,
-body {
-  height: 100%;
-}
+@import "helpers/variables";
+@import "helpers/mixins";
+
 
 body {
   display: -ms-flexbox;
@@ -15,5 +14,6 @@ body {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: $blue;
+
+  @include cool-background;
 }

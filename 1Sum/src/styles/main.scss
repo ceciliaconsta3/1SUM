@@ -13,9 +13,13 @@ Primary use:    Teams
 * When watching a directory, the watcher will compile all files not prefixed with an underscore.
 * Those files are partials and are just used for breaking up scss into digestible snippets for importation
 */
-@import "components/_buttons.scss";
-@import "helpers/_variables.scss";
-@import "layout/_footer.scss";
-@import "pages/_cover.scss";
+@import "components/buttons";
+
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "layout/footer";
+@import "pages/cover";
+
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Lora');
