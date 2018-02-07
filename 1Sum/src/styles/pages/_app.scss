@@ -2,7 +2,7 @@
   box-sizing:  border-box;
 }
 
-body {
+.app {
   background-color: $off-white;
   min-height: 100vh;
   min-height: 100%; /* fallback */
@@ -11,6 +11,27 @@ body {
   justify-content: flex-start;
   align-content: stretch;
   flex-wrap: nowrap;
+}
+
+.app-header-button {
+  height: 20px;
+  width: 30px;
+  margin-right: 16px;
+  overflow: visible;
+}
+
+.app-header .app-header-button {
+width: 24px;
+height: 24px;
+margin-right: 16px;
+text-indent: -30000px;
+overflow: hidden;
+opacity: 0.54;
+-webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+border: none;
+outline: none;
+cursor: pointer; 
 }
 
 .album {
