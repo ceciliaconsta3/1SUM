@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Login to your 1Sum account">
     <meta name="author" content="Cecilia Constantine">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../favicon.ico">
 
     <title>1Sum - Login to your account</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
     <!--Fonts and icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
   </head>
 
-  <body class="text-center">
+  <body class="text-center login">
     <form class="form-signin">
       <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
@@ -32,11 +32,16 @@
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
-      <button id="button-signin" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <button id="button-signin" class="btn btn-lg btn-success btn-block" type="submit">Sign in</button>
       <a href="app.html">To Dashboard</a>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
     </form>
 
-    <script src="../scripts/main.js"></script>
+  <!-- Placed at the end of the body so the page loads faster -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="../lib/js/bootstrap.min.js"></script>    
+  
+  <!-- Custom scripts -->
+  <script src="scripts/main.js"></script>
   </body>
 </html>

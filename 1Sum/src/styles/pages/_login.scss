@@ -1,8 +1,9 @@
-@import "helpers/variables";
-@import "helpers/mixins";
+%cool-background {
+  height: 100%;
+  background: linear-gradient(to right,#3A9BFC, #107895);
+}
 
-
-body {
+.login {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -15,5 +16,5 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
 
-  @include cool-background;
+  @extend cool-background;
 }

@@ -20,24 +20,3 @@
     padding: .75rem 1.25rem;
     font-weight: 700;
 }
-  
-.header-button {
-    height: 20px;
-    width: 30px;
-    margin-right: 16px;
-    overflow: visible;
-}
-  
-.header .header-button {
-width: 24px;
-height: 24px;
-margin-right: 16px;
-text-indent: -30000px;
-overflow: hidden;
-opacity: 0.54;
--webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
-border: none;
-outline: none;
-cursor: pointer; 
-}

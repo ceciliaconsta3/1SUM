@@ -14,12 +14,19 @@ Primary use:    Teams
 * Those files are partials and are just used for breaking up scss into digestible snippets for importation
 */
 @import "components/buttons";
+@import "components/icons";
+@import "components/loader";
+@import "components/type";
 
+// @import "helpers/placeholders";
 @import "helpers/variables";
-@import "helpers/mixins";
 
 @import "layout/footer";
+@import "layout/forms";
+
+@import "pages/app";
 @import "pages/cover";
+@import "pages/login";
 
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Lora');

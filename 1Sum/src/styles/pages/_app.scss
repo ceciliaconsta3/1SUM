@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-@import url('https://fonts.googleapis.com/css?family=Lora');
-
-
 * {
   box-sizing:  border-box;
 }
-body {
+
+.app {
   background-color: $off-white;
   min-height: 100vh;
   min-height: 100%; /* fallback */
@@ -16,17 +13,25 @@ body {
   flex-wrap: nowrap;
 }
 
-h1,
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
-  font-family: 'Nunito', sans-serif;
+.app-header-button {
+  height: 20px;
+  width: 30px;
+  margin-right: 16px;
+  overflow: visible;
 }
 
-p {
-  font-family: 'Lora', serif;
+.app-header .app-header-button {
+width: 24px;
+height: 24px;
+margin-right: 16px;
+text-indent: -30000px;
+overflow: hidden;
+opacity: 0.54;
+-webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+border: none;
+outline: none;
+cursor: pointer; 
 }
 
 .album {
