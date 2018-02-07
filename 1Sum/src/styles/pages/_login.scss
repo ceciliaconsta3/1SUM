@@ -1,5 +1,6 @@
+@import "helpers/placeholders";
 @import "helpers/variables";
-@import "helpers/mixins";
+
 
 
 body {
@@ -15,5 +16,5 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
 
-  @include cool-background;
+  @extend cool-background;
 }

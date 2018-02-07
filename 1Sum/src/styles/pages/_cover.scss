@@ -10,7 +10,7 @@ a:hover {
 /***** GENERAL *****/
 html,
 body {
-  @include cool-background;
+  @extend cool-background;
 }
 
 body {

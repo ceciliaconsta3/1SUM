@@ -18,15 +18,12 @@ Primary use:    Teams
 @import "components/loader";
 @import "components/type";
 
-@import "helpers/mixins";
+@import "helpers/placeholders";
 @import "helpers/variables";
 
 @import "layout/footer";
 @import "layout/forms";
 
-@import "pages/app";
-@import "pages/cover";
-@import "pages/login";
 
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Lora');
