@@ -1,11 +1,78 @@
+/*------------------------------------------------------------------
+[Dashboard Master Stylesheet]
+
+Project:    1Sum
+Version:    1.0
+Assigned to:    Cecilia C Constantine
+Primary use:    Teams 
+-------------------------------------------------------------------*/
+.button {
+  background-color: #3A9BFC;
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.75rem;
+}
+
+.btn-group {
+  position: absolute;
+  right: 30px;
+  margin: 10px;
+}
+
+.btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+/* Color Pallette*/
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  left: 50%;
+  top: 50%;
+  border: 8px solid #e7e7e7;
+  border-top: 8px solid #3A9BFC;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin: 7% auto;
+  animation: loader-spin 1s linear infinite;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nunito', sans-serif;
+}
+
+p {
+  font-family: 'Lora', serif;
+}
+
+/* Color Pallette*/
 * {
-  box-sizing:  border-box;
+  box-sizing: border-box;
 }
 
 .app {
-  background-color: $off-white;
+  background-color: #f7f7f7;
   min-height: 100vh;
-  min-height: 100%; /* fallback */
+  min-height: 100%;
+  /* fallback */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -21,23 +88,23 @@
 }
 
 .app-header .app-header-button {
-width: 24px;
-height: 24px;
-margin-right: 16px;
-text-indent: -30000px;
-overflow: hidden;
-opacity: 0.54;
--webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
-border: none;
-outline: none;
-cursor: pointer; 
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  text-indent: -30000px;
+  overflow: hidden;
+  opacity: 0.54;
+  -webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+  transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .album {
   padding-top: 0rem;
   padding-bottom: 0rem;
-  background-color: $off-white;
+  background-color: #f7f7f7;
 }
 
 .row-heading {
@@ -45,16 +112,17 @@ cursor: pointer;
   width: 100%;
   padding: .75rem;
   margin: 0 auto;
-  background: $blue;
+  background: #3A9BFC;
   color: white;
   font-family: 'Nunito', sans-serif;
 }
+
 .row-note {
   text-align: center;
   width: 100%;
   padding: .25rem;
   margin: 0 auto;
-  background: $tan;
+  background: #e1cca2;
   color: black;
 }
 
@@ -77,7 +145,7 @@ cursor: pointer;
 }
 
 .alt {
-  background: $grey;
+  background: #e7e7e7;
 }
 
 .card-template {
@@ -115,11 +183,10 @@ cursor: pointer;
 }
 
 header {
-  background-color: $blue;
+  background-color: #3A9BFC;
   color: white;
   width: 100vw;
-  // fallback
-  width: 100%; 
+  width: 100%;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   height: 60px;
   padding: 10px 20px;
@@ -132,15 +199,16 @@ header {
   padding-top: 60px;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   overflow-x: hidden;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; }
-
+  -webkit-overflow-scrolling: touch;
+}
 
 marquee {
-  background-color: $tan;
+  background-color: #e1cca2;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   visibility: hidden;
 }
+/*# sourceMappingURL=app.css.map */
