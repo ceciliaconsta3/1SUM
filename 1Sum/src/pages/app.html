@@ -42,36 +42,48 @@
 
     <!-- Cards: Data goes here-->
     <main role="main">
-        <div class="card-template">
-            <div class="container">
-                <div class="row">
+        <div class="card-group">
+            <div class="row">
+                <div class="col-md-3">
                     <div class="card">
-                        <p class="card-text">Redesigned the front-end of client x's website.</p>
-                        <p class="card-stats">Tim @ 7pm EST</p>
+                        <div class="card-body">
+                            <h3 class="card-title">Design</h3>
+                            <p class="card-text">Redesigned the front-end of client x's website.</p>
+                            <p class="card-footer text-muted">Tim @ 7pm EST</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Close Row -->
 
-                <div class="row">
-                    <div class="card alt">
-                        <p class="card-text">Refactored the back-end code for project X.</p>
-                        <p class="card-stats">Igor @ 7:30pm</p>
-                    </div>
-                </div>
-                <!-- Close Row -->
-                <div class="row">
+                <div class="col-md-3">
                     <div class="card">
-                        <p class="card-text">
-                            <textarea class="lora" rows="4" cols="94">Update Text Here</textarea>
-                            <button class="button">Submit</button>
-                        </p>
+                        <div class="card-body">
+                            <h3 class="card-title"></h3>
+                            <p class="card-text"></p>
+                            <p class="card-footer text-muted"></p>
+                        </div>
                     </div>
                 </div>
-                <!-- Close Row -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title"></h3>
+                            <p class="card-text"></p>
+                            <p class="card-footer text-muted"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Close Container -->
-        </div>
-        <!-- Close Album -->
+        </div><!-- end of card-group row -->
+
+            <div class="card">
+                <h2 class="card-title">Add a Note</h3>
+                <p class="card-text">
+                    <textarea id="#note-input" rows="4" cols="100" placeholder="Update text here"></textarea>
+                    <button class="btn btn-success">Submit</button>
+                </p>
+            </div>
+        </div><!-- end of card group
+
     </main>
 
     <!-- Dialog Container: add New Cards here -->
@@ -79,8 +91,7 @@
       <div class="note"></div>
     </div>
 
-
-
+    <!-- DELETE WHEN FINALIZED -->
     <a href="../index.html">Back to home</a>
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

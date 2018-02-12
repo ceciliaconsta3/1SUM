@@ -28,28 +28,6 @@ Primary use:    Teams
   font-weight: 700;
 }
 
-/* Color Pallette*/
-@keyframes loader-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.loader {
-  left: 50%;
-  top: 50%;
-  border: 8px solid #e7e7e7;
-  border-top: 8px solid #3A9BFC;
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  margin: 7% auto;
-  animation: loader-spin 1s linear infinite;
-}
-
 h1,
 h2,
 h3,
@@ -63,7 +41,46 @@ p {
   font-family: 'Lora', serif;
 }
 
+.card {
+  float: left;
+  width: 100%;
+  padding: .75rem;
+  border: 1;
+  border-radius: 3px;
+  padding: 30px 20px 20px 20px;
+}
+
+.card > img {
+  margin-bottom: 1rem;
+}
+
+.card-heading {
+  font-size: 85%;
+  text-align: center;
+  font-size: 120%;
+  font-family: 'Nunito', sans-serif;
+}
+
+.card-text {
+  font-size: 85%;
+  color: black;
+  text-align: left;
+  border: 0px;
+  line-height: 20px;
+  font-family: 'Lora', serif;
+}
+
+.card-footer {
+  font-size: 65%;
+  color: black;
+  text-align: left;
+  border: 0px;
+  line-height: 0px;
+  font-family: 'Nunito', sans-serif;
+}
+
 /* Color Pallette*/
+/* Box Shadow */
 * {
   box-sizing: border-box;
 }
@@ -135,59 +152,16 @@ p {
   font-family: 'Nunito', sans-serif;
 }
 
-.card {
-  float: left;
-  width: 100%;
-  padding: .75rem;
-  border: 1;
-  border-radius: 3px;
-  padding: 30px 20px 20px 20px;
-}
-
 .alt {
   background: #e7e7e7;
 }
 
-.card-template {
-  visibility: hidden;
-  justify-content: center;
-}
-
-.card > img {
-  margin-bottom: 1rem;
-}
-
-.card-heading {
-  font-size: 85%;
-  text-align: center;
-  font-size: 120%;
-  font-family: 'Nunito', sans-serif;
-}
-
-.card-text {
-  font-size: 85%;
-  color: black;
-  text-align: left;
-  border: 0px;
-  line-height: 20px;
-  font-family: 'Lora', serif;
-}
-
-.card-stats {
-  font-size: 65%;
-  color: black;
-  text-align: left;
-  border: 0px;
-  line-height: 0px;
-  font-family: 'Nunito', sans-serif;
-}
-
 header {
   background-color: #3A9BFC;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   color: white;
   width: 100vw;
   width: 100%;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   height: 60px;
   padding: 10px 20px;
   font-size: 18px;
@@ -195,7 +169,10 @@ header {
   position: fixed;
 }
 
-.main {
+main {
+  display: block;
+  position: absolute;
+  top: 25px;
   padding-top: 60px;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
