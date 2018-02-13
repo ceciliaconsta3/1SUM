@@ -31,18 +31,15 @@
         <![endif]-->
 
 
-    <div class="d-flex h-100 p-3 mx-auto flex-column">
+    <div class="d-flex p-3 mx-auto flex-column">
 
     <header>
           <nav>
-            <h3 class="fixed">1Sum</h3>
+            <h2 class="fixed">1Sum</h2>
             <button class="btn btn-warning float-right"><a href="pages/login.html">Login</a></button>
           </nav>
     </header>
 
-
-    <!-- Loading Indicator-->
-    <div class="loader"></div>
 
     <!-- Main-->
     <main role="main" class="container">
@@ -56,20 +53,20 @@
                 This way, you can keep note your progress along the way without forgetting the minor yet oh-so-important details. And like a real sticky, only you can see your scattered notes and thought process.
                 <br>
                 Login to start saving your blurbs and to see what your invisible team is up to.</p>
-            <div class="note-container">
-                <div class="note-card"></div>
-                <form>
-                    <textarea class="form-row" placeholder="Here's a glimpse"></textarea>
-                    <button class="btn btn-md btn-success form-row">Add a note</button>  
-                </form>
+            <div class="notepad">
+                <div class="card">
+                    <div class="card-header">Add a Note</div>
+                    <ul class="card-text"></ul>
+                        <form>
+                            <input type="text" class="cover-notepad-form text-muted" placeholder="Type a blurb here..." autofocus>
+                        </form>
+                        <button class="card-footer btn btn-success">Post</button>
+                </div>
             </div>
-        </div> 
-      </main>
-
-    <!-- Dialog Container: add New Cards here
-    <div class="note-container">
-      <div class="note"></div>
-    </div> -->
+        </div>
+     </div>
+    </div> 
+</main>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">

@@ -3,7 +3,6 @@
 
 Project:    1Sum
 Version:    1.0
-Last change:    1/30/18 [fixed Float bug, vf]
 Assigned to:    Cecilia C Constantine
 Primary use:    Teams 
 -------------------------------------------------------------------*/
@@ -11,7 +10,6 @@ Primary use:    Teams
 * When watching a directory, the watcher will compile all files not prefixed with an underscore.
 * Those files are partials and are just used for breaking up scss into digestible snippets for importation
 */
-@import url("https://fonts.googleapis.com/css?family=Nunito");
 @import url("https://fonts.googleapis.com/css?family=Lora");
 .button {
   background-color: #3A9BFC;
@@ -35,33 +33,89 @@ Primary use:    Teams
   font-weight: 700;
 }
 
-.header-button {
-  height: 20px;
-  width: 30px;
-  margin-right: 16px;
-  overflow: visible;
+/* Color Pallette*/
+/* Box Shadow */
+/* Backgrounds */
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.header .header-button {
-  width: 24px;
-  height: 24px;
-  margin-right: 16px;
-  text-indent: -30000px;
-  overflow: hidden;
-  opacity: 0.54;
-  -webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
-  transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
-  border: none;
-  outline: none;
-  cursor: pointer;
+.loader {
+  left: 50%;
+  top: 50%;
+  border: 8px solid #e7e7e7;
+  border-top: 8px solid #3A9BFC;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin: 7% auto;
+  animation: loader-spin 1s linear infinite;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nunito', sans-serif;
+}
+
+p {
+  font-family: 'Lora', serif;
 }
 
 /* Color Pallette*/
+/* Box Shadow */
+/* Backgrounds */
 /***** FOOTER *****/
 footer {
   text-align: center;
 }
 
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Color Pallette*/
+/* Box Shadow */
+/* Backgrounds */
 /***** LINKS *****/
 a,
 a:focus,
@@ -70,13 +124,13 @@ a:hover {
 }
 
 /***** GENERAL *****/
-html,
-body {
-  height: 100%;
-  background: linear-gradient(to right, #3A9BFC, #107895);
+h2 {
+  display: inline;
 }
 
-body {
+.cover {
+  height: 100vh;
+  padding: 0 1.5rem;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -86,6 +140,7 @@ body {
   color: #fff;
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to right, #3A9BFC, #107895);
 }
 
 .cover-container {
@@ -132,8 +187,21 @@ body {
   }
 }
 
-/***** COVER *****/
-.cover {
-  padding: 0 1.5rem;
+/* Color Pallette*/
+/* Box Shadow */
+/* Backgrounds */
+.login {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(to right, #3A9BFC, #107895);
 }
 /*# sourceMappingURL=main.css.map */
