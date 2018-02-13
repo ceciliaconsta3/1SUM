@@ -1,16 +1,16 @@
-@import "..helpers/variables";
+@import "../helpers/variables";
 
 .card {
-    float: left;
-    width: 100%;
-    padding: .75rem;
-    border: 1;
-    border-radius: 3px;
-    padding: 30px 20px 20px 20px;
+  float: left;
+  width: 100%;
+  padding: .75rem;
+  border: 1;
+  border-radius: 3px;
+  padding: 30px 20px 20px 20px;
 }
 
 .card-group {
-    box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
 }
 
 .card > img {
@@ -18,26 +18,31 @@ margin-bottom: 1rem;
 }
   
 .card-heading {
-    font-size: 85%;
-    text-align: center;
-    font-size: 120%;
-    font-family: 'Nunito', sans-serif;
+  font-size: 85%;
+  text-align: center;
+  font-size: 120%;
+  font-family: 'Nunito', sans-serif;
+}
+
+.card-text {
+  font-size: 85%;
+  color: black;
+  text-align: left;
+  border: 0px;
+  line-height: 20px;
+  font-family: 'Lora', serif;
 }
   
-  .card-text {
-    font-size: 85%;
-    color: black;
-    text-align: left;
-    border: 0px;
-    line-height: 20px;
-    font-family: 'Lora', serif;
-  }
-  
-  .card-footer {
-    font-size: 65%;
-    color: black;
-    text-align: left;
-    border: 0px;
-    line-height: 0px;
-    font-family: 'Nunito', sans-serif;
-  }  
+.card-footer {
+  font-size: 65%;
+  color: black;
+  text-align: left;
+  border: 0px;
+  line-height: 0px;
+  font-family: 'Nunito', sans-serif;
+}  
+
+.notepad {
+  width: 100%;
+  height: 100%;
+}

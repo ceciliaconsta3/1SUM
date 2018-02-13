@@ -1,7 +1,5 @@
-%cool-background {
-  height: 100%;
-  background: linear-gradient(to right,#3A9BFC, #107895);
-}
+@import "../helpers/variables";
+@import "../helpers/placeholders";
 
 .login {
   display: -ms-flexbox;
@@ -15,6 +13,5 @@
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-
-  @extend cool-background;
+  background: $cool-background;
 }
