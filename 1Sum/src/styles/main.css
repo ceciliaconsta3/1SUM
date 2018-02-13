@@ -125,6 +125,10 @@ a:hover {
 }
 
 /***** GENERAL *****/
+h2 {
+  display: inline;
+}
+
 .cover {
   height: 100vh;
   padding: 0 1.5rem;
