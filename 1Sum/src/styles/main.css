@@ -10,6 +10,7 @@ Primary use:    Teams
 * When watching a directory, the watcher will compile all files not prefixed with an underscore.
 * Those files are partials and are just used for breaking up scss into digestible snippets for importation
 */
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 @import url("https://fonts.googleapis.com/css?family=Lora");
 .button {
   background-color: #3A9BFC;
@@ -22,6 +23,10 @@ Primary use:    Teams
   font-size: 0.75rem;
 }
 
+.btn > a {
+  text-decoration: none;
+}
+
 .btn-group {
   position: absolute;
   right: 30px;
@@ -31,6 +36,23 @@ Primary use:    Teams
 .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
+}
+
+/* Color Pallette*/
+/* Box Shadow */
+/* Backgrounds */
+.card-group {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.card > img {
+  margin-bottom: 1rem;
+}
+
+.home-card-text {
+  padding: 10px;
+  text-align: left;
+  height: 300px;
 }
 
 /* Color Pallette*/
@@ -57,6 +79,16 @@ Primary use:    Teams
   animation: loader-spin 1s linear infinite;
 }
 
+/*** Cover ***/
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -67,7 +99,24 @@ h6 {
 }
 
 p {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito', serif;
+}
+
+.card,
+.card > button {
+  color: black;
+  border: none;
+  border-radius: 25px;
+}
+
+.card-header {
+  font-size: 85%;
+  font-size: 120%;
+}
+
+.card-text {
+  font-size: 85%;
+  line-height: 20px;
 }
 
 /* Color Pallette*/
@@ -113,6 +162,17 @@ footer {
   border-top-right-radius: 0;
 }
 
+.cover-notepad-form {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.cover-notepad-form:focus {
+  background: #f7f7f7;
+}
+
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
@@ -156,6 +216,10 @@ h2 {
   margin-bottom: 0;
 }
 
+main {
+  margin-top: 10%;
+}
+
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
@@ -176,15 +240,6 @@ h2 {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
-}
-
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
 }
 
 /* Color Pallette*/

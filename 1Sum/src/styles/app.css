@@ -17,6 +17,10 @@ Primary use:    Teams
   font-size: 0.75rem;
 }
 
+.btn > a {
+  text-decoration: none;
+}
+
 .btn-group {
   position: absolute;
   right: 30px;
@@ -38,21 +42,29 @@ h6 {
 }
 
 p {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito', serif;
+}
+
+.card,
+.card > button {
+  color: black;
+  border: none;
+  border-radius: 25px;
+}
+
+.card-header {
+  font-size: 85%;
+  font-size: 120%;
+}
+
+.card-text {
+  font-size: 85%;
+  line-height: 20px;
 }
 
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
-.card {
-  float: left;
-  width: 100%;
-  padding: .75rem;
-  border: 1;
-  border-radius: 3px;
-  padding: 30px 20px 20px 20px;
-}
-
 .card-group {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
@@ -61,29 +73,10 @@ p {
   margin-bottom: 1rem;
 }
 
-.card-heading {
-  font-size: 85%;
-  text-align: center;
-  font-size: 120%;
-  font-family: 'Nunito', sans-serif;
-}
-
-.card-text {
-  font-size: 85%;
-  color: black;
+.home-card-text {
+  padding: 10px;
   text-align: left;
-  border: 0px;
-  line-height: 20px;
-  font-family: 'Lora', serif;
-}
-
-.card-footer {
-  font-size: 65%;
-  color: black;
-  text-align: left;
-  border: 0px;
-  line-height: 0px;
-  font-family: 'Nunito', sans-serif;
+  height: 300px;
 }
 
 /* Color Pallette*/

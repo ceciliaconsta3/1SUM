@@ -8,5 +8,23 @@ h6 {
 }
 
 p {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito', serif;
 }
+
+.card,
+.card > button {
+  color: black;
+  border: none;
+  border-radius: 25px;
+}
+
+.card-header {
+  font-size: 85%;
+  font-size: 120%; 
+}
+
+.card-text {
+  font-size: 85%;
+  line-height: 20px;
+}
+  
