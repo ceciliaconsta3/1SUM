@@ -73,9 +73,10 @@ p {
   margin-bottom: 1rem;
 }
 
-.card-text {
+.home-card-text {
   padding: 10px;
   text-align: left;
+  height: 300px;
 }
 
 /* Color Pallette*/
