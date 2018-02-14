@@ -33,6 +33,10 @@ Primary use:    Teams
   font-weight: 700;
 }
 
+button > a {
+  text-decoration: none;
+}
+
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
@@ -68,6 +72,10 @@ h6 {
 
 p {
   font-family: 'Lora', serif;
+}
+
+a > button {
+  text-decoration: none;
 }
 
 /* Color Pallette*/
