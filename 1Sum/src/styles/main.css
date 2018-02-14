@@ -41,6 +41,22 @@ Primary use:    Teams
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
+.card-group {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.card > img {
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Color Pallette*/
+/* Box Shadow */
+/* Backgrounds */
 @keyframes loader-spin {
   0% {
     transform: rotate(0deg);
@@ -85,8 +101,11 @@ p {
   font-family: 'Nunito', serif;
 }
 
-.card {
+.card,
+.card > button {
   color: black;
+  border: none;
+  border-radius: 25px;
 }
 
 .card-header {
@@ -96,16 +115,7 @@ p {
 
 .card-text {
   font-size: 85%;
-  text-align: left;
-  border: 0px;
   line-height: 20px;
-}
-
-.card-footer {
-  font-size: 65%;
-  text-align: left;
-  border: 0px;
-  line-height: 0px;
 }
 
 /* Color Pallette*/
@@ -149,6 +159,17 @@ footer {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.cover-notepad-form {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.cover-notepad-form:focus {
+  background: #f7f7f7;
 }
 
 /* Color Pallette*/

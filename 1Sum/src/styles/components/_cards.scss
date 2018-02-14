@@ -1,12 +1,5 @@
 @import "../helpers/variables";
 
-.card {
-  width: 100%;
-  padding: .75rem;
-  border: 1;
-  border-radius: 3px;
-  padding: 30px 20px 20px 20px;
-}
 
 .card-group {
   box-shadow: $box-shadow;
@@ -14,4 +7,9 @@
 
 .card > img {
 margin-bottom: 1rem;
+}
+
+.card-text {
+  padding: 10px;
+  text-align: left;
 }

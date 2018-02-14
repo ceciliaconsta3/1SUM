@@ -11,10 +11,13 @@ p {
   font-family: 'Nunito', serif;
 }
 
-
-.card {
+.card,
+.card > button {
   color: black;
+  border: none;
+  border-radius: 25px;
 }
+
 .card-header {
   font-size: 85%;
   font-size: 120%; 
@@ -22,14 +25,6 @@ p {
 
 .card-text {
   font-size: 85%;
-  text-align: left;
-  border: 0px;
   line-height: 20px;
 }
   
-.card-footer {
-  font-size: 65%;
-  text-align: left;
-  border: 0px;
-  line-height: 0px;
-} 
