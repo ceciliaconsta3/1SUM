@@ -8,5 +8,28 @@ h6 {
 }
 
 p {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito', serif;
 }
+
+
+.card {
+  color: black;
+}
+.card-header {
+  font-size: 85%;
+  font-size: 120%; 
+}
+
+.card-text {
+  font-size: 85%;
+  text-align: left;
+  border: 0px;
+  line-height: 20px;
+}
+  
+.card-footer {
+  font-size: 65%;
+  text-align: left;
+  border: 0px;
+  line-height: 0px;
+} 

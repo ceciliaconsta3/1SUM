@@ -10,6 +10,7 @@ Primary use:    Teams
 * When watching a directory, the watcher will compile all files not prefixed with an underscore.
 * Those files are partials and are just used for breaking up scss into digestible snippets for importation
 */
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 @import url("https://fonts.googleapis.com/css?family=Lora");
 .button {
   background-color: #3A9BFC;
@@ -22,6 +23,10 @@ Primary use:    Teams
   font-size: 0.75rem;
 }
 
+.btn > a {
+  text-decoration: none;
+}
+
 .btn-group {
   position: absolute;
   right: 30px;
@@ -31,10 +36,6 @@ Primary use:    Teams
 .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
-}
-
-button > a {
-  text-decoration: none;
 }
 
 /* Color Pallette*/
@@ -61,6 +62,16 @@ button > a {
   animation: loader-spin 1s linear infinite;
 }
 
+/*** Cover ***/
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -71,11 +82,30 @@ h6 {
 }
 
 p {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito', serif;
 }
 
-a > button {
-  text-decoration: none;
+.card {
+  color: black;
+}
+
+.card-header {
+  font-size: 85%;
+  font-size: 120%;
+}
+
+.card-text {
+  font-size: 85%;
+  text-align: left;
+  border: 0px;
+  line-height: 20px;
+}
+
+.card-footer {
+  font-size: 65%;
+  text-align: left;
+  border: 0px;
+  line-height: 0px;
 }
 
 /* Color Pallette*/
@@ -164,6 +194,10 @@ h2 {
   margin-bottom: 0;
 }
 
+main {
+  margin-top: 10%;
+}
+
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
@@ -184,15 +218,6 @@ h2 {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
-}
-
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
 }
 
 /* Color Pallette*/

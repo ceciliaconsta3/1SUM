@@ -1,7 +1,6 @@
 @import "../helpers/variables";
 
 .card {
-  float: left;
   width: 100%;
   padding: .75rem;
   border: 1;
@@ -16,33 +15,3 @@
 .card > img {
 margin-bottom: 1rem;
 }
-  
-.card-heading {
-  font-size: 85%;
-  text-align: center;
-  font-size: 120%;
-  font-family: 'Nunito', sans-serif;
-}
-
-.card-text {
-  font-size: 85%;
-  color: black;
-  text-align: left;
-  border: 0px;
-  line-height: 20px;
-  font-family: 'Lora', serif;
-}
-  
-.card-footer {
-  font-size: 65%;
-  color: black;
-  text-align: left;
-  border: 0px;
-  line-height: 0px;
-  font-family: 'Nunito', sans-serif;
-}  
-
-// .notepad {
-//   width: 100%;
-//   height: 100%;
-// }
