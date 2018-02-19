@@ -1,11 +1,10 @@
 /**
  * NOTEPAD
  * This allows the user to enter notes by pressing Enter or via Add button
- * Instance variables:
+ * Parameter variables:
  * note: returns notepad form input
  * input: add note form input
  * notepad: entire note area
- * 
  */
 function addNote() {
     var note = $("#home-note-input").val();
