@@ -17,7 +17,7 @@
 
     <title>1Sum - Remote Team Daily Updates</title>
 
-    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
     <!--Fonts and icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom styles -->
@@ -55,11 +55,11 @@
             <div class="notepad col-lg-6 text-left">
                 <div class="card">
                     <div class="card-header">Notes</div>
-                    <ul class="home-card-text"></ul>
-                    <form>
-                        <input type="text" class="cover-notepad-form text-muted" placeholder="Type a blurb here..." autofocus>
+                    <ul id="home-notepad" class="home-card-text"></ul>
+                    <form id="home-form">
+                        <input id="home-note-input" type="text" class="cover-notepad-form text-muted" placeholder="Type a blurb here..." autofocus>
                     </form>
-                    <button class="card-footer btn btn-success text-center">Add</button>
+                    <button id="home-add" class="card-footer btn btn-success text-center">Add</button>
                 </div>
             </div>
         </div>
@@ -67,10 +67,12 @@
 
     <footer class="mastfoot mt-auto">
         <div class="inner">
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-globe"></i>
-                <i class="fa fa-github"></i>
-          <p>&copy; <span id="copyright-year">2018</span> <a href="https://popvia.com">PopVia</a></p>
+                <i class="fa fa-twitter"><a title="to Twitter page" href="https://twitter.com/PopVia"></a></i>
+                <!-- website is currently down
+                    <i class="fa fa-globe"></i>
+                -->
+                <i class="fa fa-github"><a title="to GitHub page" href="https://github.com/ceciliaconsta3/PopVia"></a></i>
+          <p>&copy; <span id="copyright-year">2018</span> <a title="to Twitter page" href="https://twitter.com/PopVia">PopVia</a></p>
         </div>
       </footer>
 
@@ -79,9 +81,9 @@
 
 
   <!-- Placed at the end of the body so the page loads faster -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="../vendor/jquery/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="../lib/bootstrap/js/bootstrap.min.js"></script> 
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script> 
   
   <!-- Custom scripts -->
   <script src="scripts/main.js"></script>
