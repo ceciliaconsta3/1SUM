@@ -55,11 +55,11 @@
             <div class="notepad col-lg-6 text-left">
                 <div class="card">
                     <div class="card-header">Notes</div>
-                    <ul class="home-card-text"></ul>
+                    <ul id="home-notepad" class="home-card-text"></ul>
                     <form>
-                        <input type="text" class="cover-notepad-form text-muted" placeholder="Type a blurb here..." autofocus>
+                        <input id="note-input" type="text" class="cover-notepad-form text-muted" placeholder="Type a blurb here..." autofocus>
                     </form>
-                    <button class="card-footer btn btn-success text-center">Add</button>
+                    <button id="home-add" class="card-footer btn btn-success text-center">Add</button>
                 </div>
             </div>
         </div>
@@ -81,9 +81,9 @@
 
 
   <!-- Placed at the end of the body so the page loads faster -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="../vendor/jquery/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="../lib/bootstrap/js/bootstrap.min.js"></script> 
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script> 
   
   <!-- Custom scripts -->
   <script src="scripts/main.js"></script>
