@@ -56,18 +56,6 @@ Primary use:    Teams
   margin-bottom: 1rem;
 }
 
-.home-card-footer {
-  display: inline-flex;
-  padding: 0;
-  border: 0;
-}
-
-.home-card-text {
-  padding: 30px;
-  text-align: left;
-  height: 300px;
-}
-
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
@@ -193,14 +181,14 @@ footer {
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
-/***** LINKS *****/
+/***** GENERAL ******
+*******************/
 a,
 a:focus,
 a:hover {
   color: #fff;
 }
 
-/***** GENERAL *****/
 h2 {
   display: inline;
 }
@@ -217,14 +205,15 @@ h2 {
   color: #fff;
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
-  background: linear-gradient(to right, #3A9BFC, #107895);
+  background: linear-gradient(90deg, #673AB7, #107895);
 }
 
 .cover-container {
   max-width: 42em;
 }
 
-/***** HEADER *****/
+/***** HEADER ******
+*******************/
 .masthead {
   margin-bottom: 2rem;
 }
@@ -259,6 +248,24 @@ main {
   border-bottom-color: #fff;
 }
 
+/***** NOTEPAD ******
+*******************/
+.home-card-footer {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+}
+
+.home-card-text {
+  padding: 30px;
+  text-align: left;
+  height: 300px;
+}
+
+.home-notepad {
+  box-shadow: 1px 23px 60px -4px #000;
+}
+
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
@@ -274,6 +281,6 @@ main {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background: linear-gradient(to right, #3A9BFC, #107895);
+  background: linear-gradient(90deg, #673AB7, #107895);
 }
 /*# sourceMappingURL=main.css.map */

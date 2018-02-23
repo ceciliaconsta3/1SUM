@@ -11,7 +11,7 @@
 $(function(){
     $("#home-add").on("click", addNotes);
     $("#home-clear").on("click", function() {
-        $("#home-notepad").empty();
+        $("#home-card").empty();
     });
     $("input").on("keydown", function(event){
         // returns which keyboard key was pressed for this event
@@ -25,7 +25,7 @@ $(function(){
 
 function addNotes() {
     var note = $("#home-note-input").val();
-    var notepad = $("#home-notepad");
+    var notepad = $("#home-card");
 
     if ( note != "") {
         var elem = $("<li></li>").text(note);

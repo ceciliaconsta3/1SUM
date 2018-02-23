@@ -1,14 +1,14 @@
 @import "../helpers/variables";
 
 
-/***** LINKS *****/
+/***** GENERAL ******
+*******************/
 a,
 a:focus,
 a:hover {
   color: #fff;
 }
 
-/***** GENERAL *****/
 h2 {
  display: inline;
 }
@@ -24,7 +24,7 @@ h2 {
   justify-content: center;
   color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  box-shadow: $fullpage-shadow;
   background: $cool-background;
 }
 
@@ -34,7 +34,8 @@ h2 {
 
 
 
-/***** HEADER *****/
+/***** HEADER ******
+*******************/
 .masthead {
   margin-bottom: 2rem;
 }
@@ -67,4 +68,23 @@ main {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+
+/***** NOTEPAD ******
+*******************/
+.home-card-footer {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+}
+
+.home-card-text {
+  padding: 30px;
+  text-align: left;
+  height: 300px;
+}
+
+.home-notepad{
+  box-shadow: 1px 23px 60px -4px #000
 }
