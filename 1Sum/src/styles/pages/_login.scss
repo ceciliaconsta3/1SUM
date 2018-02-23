@@ -13,5 +13,10 @@
   padding-top: 40px;
   padding-bottom: 40px;
   background: $cool-background;
-  //box-shadow: $fullpage-shadow;
+}
+
+.login-wrapper {
+  background: white;
+  //box-shadow: 0px 8px 48px -1px #000;
+  box-shadow: $container-shadow;
 }

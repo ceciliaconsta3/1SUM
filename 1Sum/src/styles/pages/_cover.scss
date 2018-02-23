@@ -24,7 +24,6 @@ h2 {
   justify-content: center;
   color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: $fullpage-shadow;
   background: $cool-background;
 }
 
@@ -86,5 +85,5 @@ main {
 }
 
 .home-notepad{
-  box-shadow: 1px 23px 60px -4px #000
+  box-shadow: $container-shadow;
 }
