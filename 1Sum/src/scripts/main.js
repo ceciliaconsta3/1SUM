@@ -6,27 +6,6 @@
  * input: add note form input
  * notepad: entire note area
  */
-function addNote() {
-    var note = $("#home-note-input").val();
-    var input = $("home-note-input");
-    var notepad = $("#home-notepad");
-
-    if ( note !== "") {
-        // add value as list item to notepad
-        var elem = $("<li><li>").text(note);
-        $(notepad).append(elem);
-        // clear input field on keyboard enter or button press enter
-        $(input).val("");
-        $("#home-form")[0].reset();
-    }
-}
-
-/* function maxNotes() {
-* limit user from submitting more notes than can comfortably fit in 
-* the home page notepad
-}
-*/
-
 
 // on document ready    
 $(function(){
@@ -40,3 +19,27 @@ $(function(){
         }
     });     
 })  
+
+
+function addNote() {
+    var note = $("#home-note-input").val();
+    //var input = $("home-note-input");
+    var notepad = $("#home-notepad");
+
+    if ( note != "") {
+        // add value as list item to notepad
+        var elem = $("<li></li>").text(note);
+        $(notepad).append(elem);
+        // clear input field on keyboard enter or button press enter
+        //$(note).val("");
+        $("#home-form")[0].reset();
+    }
+}
+
+/* function maxNotes() {
+* limit user from submitting more notes than can comfortably fit in 
+* the home page notepad
+}
+*/
+
+
