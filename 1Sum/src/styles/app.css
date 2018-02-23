@@ -32,6 +32,12 @@ Primary use:    Teams
   font-weight: 700;
 }
 
+.login-btn-group {
+  position: relative;
+  margin: 10px;
+  right: 0;
+}
+
 .home-btn-add,
 .home-btn-clear {
   width: 50%;
@@ -50,6 +56,7 @@ h6 {
 
 p {
   font-family: 'Nunito', serif;
+  font-size: 18px;
 }
 
 .card,
@@ -60,13 +67,12 @@ p {
 }
 
 .card-header {
-  font-size: 85%;
-  font-size: 120%;
+  font-size: 1.5rem;
 }
 
 .card-text {
-  font-size: 85%;
-  line-height: 20px;
+  font-size: 1.3rem;
+  line-height: 24px;
 }
 
 .card-footer {
@@ -76,12 +82,19 @@ p {
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
-.card-group {
+.card {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  margin: 10px 40px;
 }
 
 .card > img {
   margin-bottom: 1rem;
+}
+
+.card-body,
+.card-footer {
+  background: white;
+  padding: 10px 50px 0 50px;
 }
 
 /* Color Pallette*/
