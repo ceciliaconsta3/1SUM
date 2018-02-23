@@ -9,32 +9,33 @@
 
 // on document ready    
 $(function(){
-    $("#home-add").on("click", addNote);
+    $("#home-add").on("click", addNotes);
+    $("#home-clear").on("click", function() {
+        $("#home-notepad").empty();
+    });
     $("input").on("keydown", function(event){
         // returns which keyboard key was pressed for this event
         // 13 is the keycode for Enter
         if (event.which==13){
             event.preventDefault();
-            addNote();
+            addNotes();
         }
     });     
 })  
 
-
-function addNote() {
+function addNotes() {
     var note = $("#home-note-input").val();
-    //var input = $("home-note-input");
     var notepad = $("#home-notepad");
 
     if ( note != "") {
-        // add value as list item to notepad
         var elem = $("<li></li>").text(note);
         $(notepad).append(elem);
         // clear input field on keyboard enter or button press enter
-        //$(note).val("");
         $("#home-form")[0].reset();
     }
 }
+
+
 
 /* function maxNotes() {
 * limit user from submitting more notes than can comfortably fit in 

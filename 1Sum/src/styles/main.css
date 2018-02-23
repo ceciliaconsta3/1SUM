@@ -38,6 +38,13 @@ Primary use:    Teams
   font-weight: 700;
 }
 
+.home-btn-add,
+.home-btn-clear {
+  width: 50%;
+  border-radius: 0;
+  border: 0;
+}
+
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
@@ -49,8 +56,14 @@ Primary use:    Teams
   margin-bottom: 1rem;
 }
 
+.home-card-footer {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+}
+
 .home-card-text {
-  padding: 10px;
+  padding: 30px;
   text-align: left;
   height: 300px;
 }
@@ -117,6 +130,10 @@ p {
 .card-text {
   font-size: 85%;
   line-height: 20px;
+}
+
+.card-footer {
+  color: black;
 }
 
 /* Color Pallette*/
