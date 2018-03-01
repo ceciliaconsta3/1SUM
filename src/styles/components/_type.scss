@@ -1,0 +1,33 @@
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: 'Nunito', sans-serif;
+}
+
+p {
+  font-family: 'Nunito', serif;
+  font-size: 18px;
+}
+
+.card,
+.card > button {
+  color: black;
+  border: none;
+  border-radius: 25px;
+}
+
+.card-header {
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1.3rem;
+  line-height: 24px;
+}
+
+.card-footer {
+  color: black;
+}

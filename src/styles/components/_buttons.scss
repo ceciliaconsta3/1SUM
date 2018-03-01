@@ -1,0 +1,38 @@
+
+.button {
+    background-color: #3A9BFC;
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.75rem;
+}
+
+.btn > a {
+    text-decoration: none;
+}
+
+.btn-group {
+    position: absolute;
+    right: 30px;
+    margin: 10px;
+}
+
+.btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+.login-btn-group {
+    position: relative;
+    margin: 10px;  
+    right: 0;
+}
+
+.home-btn-add,
+.home-btn-clear {
+    width: 50%;
+    border-radius: 0;
+    border: 0;
+}

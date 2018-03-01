@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="1Sum - PWA for casual communication between remote teams">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>1Sum - Dashboard</title>
+
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../dist/css/app.min.css">
+</head>
+
+<body class="app">
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- APP wrapper -->
+    <header class="app-header">
+        <h1 class="app-header-title">1 Sum</h1>
+        <div class="btn-group">
+          <button id="nav-button" class="app-header-button" aria-label="Navigation">Nav</button>
+          <button id="date-button" class="app-header-button" aria-label="Date">Calendar</button>          
+        </div>
+
+    </header>
+
+    <marquee>Daily Team Updates | Announcements</marquee>
+
+    <!-- Loading Indicator-->
+    <div class="loader"></div>
+
+
+    <!-- Cards: Data goes here-->
+    <main role="main">
+        <div class="card-group">
+            <div id="note-container" class="row card">
+                <!-- Dialog Container: add New Cards here -->                  
+                <div class="card-body">
+                    <p id="note" class="card-text">Redesigned the front-end of client x's website.</p>
+                    <p id="timestamp" class="card-footer text-small text-muted">Tim @ 7pm EST</p>
+                </div>
+            </div>
+        </div><!-- end of card-group row -->
+
+
+            <!-- <div class="card">
+                <h2 class="card-title">Add a Note</h3>
+                <p class="card-text">
+                    <textarea id="#note-input" rows="4" cols="100" placeholder="Update text here"></textarea>
+                    <button class="btn btn-success">Submit</button>
+                </p>
+            </div> -->
+        </div><!-- end of card group
+
+    </main>
+
+    <!-- DELETE WHEN FINALIZED -->
+    <a href="../index.html">Back to home</a>
+
+    <script src="../vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- Custom scripts --> 
+    <script src="../dist/js/all.min.js"></script>
+</body>
+
+</html>
