@@ -7,13 +7,13 @@ Assigned to:    Cecilia C Constantine
 Primary use:    Teams 
 -------------------------------------------------------------------*/
 
-@import "styles/components/buttons";
-@import "styles/components/icons";
+@import "../src/styles/components/buttons";
+@import "../src/styles/components/icons";
 // @import "components/loader";
-@import "styles/components/type";
-@import "styles/components/cards";
+@import "../src/styles/components/type";
+@import "../src/styles/components/cards";
 
-@import "styles/helpers/variables";
+@import "../src/styles/helpers/variables";
 
 * {
     box-sizing:  border-box;
