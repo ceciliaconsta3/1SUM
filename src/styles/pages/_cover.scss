@@ -9,13 +9,17 @@ a:hover {
   color: #fff;
 }
 
+body {
+  padding: 0;
+}
+
 h2 {
  display: inline;
 }
 
 .cover {
   height: 100vh;
-  padding: 0 1.5rem;
+  padding: 0rem;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -24,7 +28,7 @@ h2 {
   justify-content: center;
   color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  background: $cool-background;
+  background: $dark-blue;
 }
 
 .cover-container {
@@ -32,16 +36,28 @@ h2 {
 }
 
 
-/***** FANCY BACKGROUND ******
-*****************************/
-section {
-  background: purple;
-  min-height: 100vh;
+/***** CHANGING HOME BACKGROUND ******
+*************************************/
+.fancy-background {
+  background: $blue;
+  min-height: 110vh;
+  animation: changing-background 8s  infinite;
+}
+.fancy-header {
+  font-size: 6rem;
+  margin: 0 auto;
+  padding: 70% 0;
+  display: flex;
+  justify-content: center;
 }
 
 
 /***** HEADER ******
 *******************/
+.home-text {
+  padding: 0 10% 0;
+}
+
 .masthead {
   margin-bottom: 2rem;
 }
@@ -53,7 +69,15 @@ section {
 main {
   margin-top: 10%;
 }
+h2 {
+  display: inline-flex;
+  padding: 10%;
+}
 
+nav button {
+  display: inline-flex;
+  margin: 10%;
+}
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;

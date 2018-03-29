@@ -1,0 +1,16 @@
+@import "../helpers/variables";
+
+
+@keyframes loader-spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes changing-background {
+    0% {background-color: $blue};
+    25% {background-color: #fa2b7e};  
+    45% {background-color: red};
+    65% {background-color: orange};
+    85% {background-color: #67f428};
+    100% {background-color: $blue};    
+}
