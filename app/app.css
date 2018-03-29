@@ -79,6 +79,10 @@ p {
   color: black;
 }
 
+footer p {
+  font-size: 0.75rem;
+}
+
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
