@@ -40,17 +40,17 @@ h2 {
 *************************************/
 .fancy-background {
   background: $blue;
-  min-height: 110vh;
+  height: 100vh;
   animation: changing-background 8s  infinite;
-}
-.fancy-header {
-  font-size: 6rem;
-  margin: 0 auto;
-  padding: 70% 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-
+.fancy-header {
+  font-size: 5rem;
+  margin: 40% auto;
+  flex-grow: 1;
+}
 
 /***** HEADER ******
 *******************/

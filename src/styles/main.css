@@ -118,6 +118,12 @@ Primary use:    Teams
   }
 }
 
+@media screen and (min-width: 790px) {
+  .fancy-header {
+    font-size: 10rem;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -251,16 +257,17 @@ h2 {
 *************************************/
 .fancy-background {
   background: #3A9BFC;
-  min-height: 110vh;
+  height: 100vh;
   animation: changing-background 8s  infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .fancy-header {
-  font-size: 6rem;
-  margin: 0 auto;
-  padding: 70% 0;
-  display: flex;
-  justify-content: center;
+  font-size: 5rem;
+  margin: 40% auto;
+  flex-grow: 1;
 }
 
 /***** HEADER ******
