@@ -1,4 +1,4 @@
-
+@import "../helpers/variables";
 
 .form-signin {
     width: 100%;
@@ -40,6 +40,6 @@
     outline: none;
     width: 100%;
     &:focus {
-        background: $off-white;
+        background: $white;
     }
 }

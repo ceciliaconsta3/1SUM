@@ -10,12 +10,15 @@ Primary use:    Teams
 * When watching a directory, the watcher will compile all files not prefixed with an underscore.
 * Those files are partials and are just used for breaking up scss into digestible snippets for importation
 */
+/* Color Pallette*/
+/* Box Shadow */
+/* Backgrounds */
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 @import url("https://fonts.googleapis.com/css?family=Lora");
 .button {
   background-color: #3A9BFC;
   border: none;
-  color: white;
+  color: #f7f7f7;
   padding: 5px 32px;
   text-align: center;
   text-decoration: none;
@@ -65,7 +68,7 @@ Primary use:    Teams
 
 .card-body,
 .card-footer {
-  background: white;
+  background: #f7f7f7;
   padding: 10px 50px 0 50px;
 }
 
@@ -102,6 +105,9 @@ Primary use:    Teams
   }
 }
 
+/* Color Pallette*/
+/* Box Shadow */
+/* Backgrounds */
 /*** Cover ***/
 @media (min-width: 48em) {
   .masthead-brand {
@@ -158,6 +164,9 @@ footer {
   text-align: center;
 }
 
+/* Color Pallette*/
+/* Box Shadow */
+/* Backgrounds */
 .form-signin {
   width: 100%;
   max-width: 330px;
@@ -209,10 +218,14 @@ footer {
 /* Backgrounds */
 /***** GENERAL ******
 *******************/
+html {
+  background: #f7f7f7;
+}
+
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #f7f7f7;
 }
 
 body {

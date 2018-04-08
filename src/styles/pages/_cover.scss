@@ -3,10 +3,13 @@
 
 /***** GENERAL ******
 *******************/
+html {
+  background: $white;
+}
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: $white;
 }
 
 body {
