@@ -7,10 +7,12 @@
 }
 
 @keyframes changing-background {
-    0% {background-color: $blue};
-    25% {background-color: #fa2b7e};  
-    45% {background-color: red};
-    65% {background-color: orange};
-    85% {background-color: #67f428};
-    100% {background-color: $blue};    
+    0% {background-position: top left};
+    50% {background-position: bottom right};
+    100% {background-position: top left};    
+}
+
+@keyframes bobbing {
+    0% {transform: translateY(35px); }
+    100% {transform: translateY(0); }
 }

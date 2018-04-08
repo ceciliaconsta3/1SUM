@@ -83,22 +83,22 @@ Primary use:    Teams
 
 @keyframes changing-background {
   0% {
-    background-color: #3A9BFC;
+    background-position: top left;
   }
-  25% {
-    background-color: #fa2b7e;
-  }
-  45% {
-    background-color: red;
-  }
-  65% {
-    background-color: orange;
-  }
-  85% {
-    background-color: #67f428;
+  50% {
+    background-position: bottom right;
   }
   100% {
-    background-color: #3A9BFC;
+    background-position: top left;
+  }
+}
+
+@keyframes bobbing {
+  0% {
+    transform: translateY(35px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
@@ -109,18 +109,6 @@ Primary use:    Teams
   }
   .nav-masthead {
     float: right;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  nav {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 790px) {
-  .fancy-header {
-    font-size: 10rem;
   }
 }
 
@@ -253,21 +241,35 @@ h2 {
   max-width: 42em;
 }
 
-/***** CHANGING HOME BACKGROUND ******
+/***** HOME BACKGROUND ******
 *************************************/
 .fancy-background {
   background: #3A9BFC;
+  background: linear-gradient(130deg, #fa2b7e, orange, #67f428, #3A9BFC);
+  background-size: 600% 600%;
   height: 100vh;
-  animation: changing-background 8s  infinite;
+  animation: changing-background 15s ease-in  infinite;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #fff;
 }
 
 .fancy-header {
-  font-size: 5rem;
   margin: 40% auto;
-  flex-grow: 1;
+}
+
+.fancy-header h1 {
+  font-size: 8rem;
+}
+
+.fancy-header .fa-chevron-down {
+  margin-top: 40%;
+  animation: bobbing 1.5s infinite;
+}
+
+.fancy-nav {
+  display: none;
 }
 
 /***** HEADER ******
