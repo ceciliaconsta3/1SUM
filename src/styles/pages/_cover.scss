@@ -3,12 +3,6 @@
 
 /***** GENERAL ******
 *******************/
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
 body {
   padding: 0;
 }
@@ -27,7 +21,6 @@ h2 {
   -webkit-box-pack: center;
   justify-content: center;
   color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   background: $dark-blue;
 }
 
@@ -36,20 +29,28 @@ h2 {
 }
 
 
-/***** CHANGING HOME BACKGROUND ******
+/***** HOME BACKGROUND ******
 *************************************/
 .fancy-background {
   background: $blue;
+  background: linear-gradient(130deg, #fa2b7e, orange, #67f428, $blue);
+  background-size: 600% 600%;
   height: 100vh;
-  animation: changing-background 8s  infinite;
+  animation: changing-background 15s ease-in 
+infinite;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .fancy-header {
-  font-size: 5rem;
   margin: 40% auto;
-  flex-grow: 1;
+  // flex-grow: 1;
+
+  .fa-chevron-down {
+    margin-top: 40%;
+    animation: bobbing 1.5s infinite;
+  }
 }
 
 /***** HEADER ******
@@ -98,23 +99,4 @@ nav button {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
-}
-
-
-/***** NOTEPAD ******
-*******************/
-.home-card-footer {
-  display: inline-flex;
-  padding: 0;
-  border: 0;
-}
-
-.home-card-text {
-  padding: 30px;
-  text-align: left;
-  height: 300px;
-}
-
-.home-notepad{
-  box-shadow: $container-shadow;
 }

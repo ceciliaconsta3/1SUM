@@ -6,10 +6,13 @@ Version:    1.0
 Assigned to:    Cecilia C Constantine
 Primary use:    Teams 
 -------------------------------------------------------------------*/
+/* Color Pallette*/
+/* Box Shadow */
+/* Backgrounds */
 .button {
   background-color: #3A9BFC;
   border: none;
-  color: white;
+  color: #f7f7f7;
   padding: 5px 32px;
   text-align: center;
   text-decoration: none;
@@ -43,6 +46,21 @@ Primary use:    Teams
   width: 50%;
   border-radius: 0;
   border: 0;
+}
+
+html {
+  background: #f7f7f7;
+}
+
+main,
+footer {
+  color: black;
+}
+
+a,
+a:focus,
+a:hover {
+  color: #f7f7f7;
 }
 
 h1,
@@ -79,8 +97,22 @@ p {
   color: black;
 }
 
+.fancy-background {
+  color: #fff;
+}
+
+.fancy-header h1 {
+  font-size: 8rem;
+}
+
 footer p {
   font-size: 0.75rem;
+}
+
+.home-card-text {
+  padding: 30px;
+  text-align: left;
+  height: 300px;
 }
 
 /* Color Pallette*/
@@ -97,8 +129,41 @@ footer p {
 
 .card-body,
 .card-footer {
-  background: white;
+  background: #f7f7f7;
   padding: 10px 50px 0 50px;
+}
+
+/***** HOME CARD EXAMPLE ******
+*******************/
+.home-notepad,
+.home-notepad div,
+.home-card-text,
+.home-card-footer,
+.home-btn-add,
+.home-btn-clear {
+  background-color: black;
+  color: #f7f7f7;
+}
+
+.home-card-footer {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+}
+
+.home-notepad {
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
+}
+
+.cover-notepad-form {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.cover-notepad-form:focus {
+  background: #f7f7f7;
 }
 
 /* Color Pallette*/
@@ -153,7 +218,7 @@ footer p {
   padding: .75rem;
   margin: 0 auto;
   background: #3A9BFC;
-  color: white;
+  color: #f7f7f7;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -182,7 +247,7 @@ footer p {
 header {
   background-color: #3A9BFC;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
-  color: white;
+  color: #f7f7f7;
   width: 100vw;
   width: 100%;
   height: 60px;

@@ -8,7 +8,6 @@ Primary use:    Teams
 -------------------------------------------------------------------*/
 
 @import "../src/styles/components/buttons";
-@import "../src/styles/components/icons";
 // @import "components/loader";
 @import "../src/styles/components/type";
 @import "../src/styles/components/cards";
@@ -20,7 +19,7 @@ Primary use:    Teams
   }
   
   .app {
-    background-color: $off-white;
+    background-color: $white;
     min-height: 100vh;
     min-height: 100%; /* fallback */
     display: flex;
@@ -54,7 +53,7 @@ Primary use:    Teams
   .album {
     padding-top: 0rem;
     padding-bottom: 0rem;
-    background-color: $off-white;
+    background-color: $white;
   }
   
   .row-heading {
@@ -63,7 +62,7 @@ Primary use:    Teams
     padding: .75rem;
     margin: 0 auto;
     background: $blue;
-    color: white;
+    color: $white;
     font-family: 'Nunito', sans-serif;
   }
   .row-note {
@@ -94,7 +93,7 @@ Primary use:    Teams
   header {
     background-color: $blue;
     box-shadow: $app-shadow;
-    color: white;
+    color: $white;
     width: 100vw;
     // fallback
     width: 100%; 

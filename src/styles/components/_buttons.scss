@@ -1,8 +1,9 @@
+@import "../helpers/variables";
 
 .button {
     background-color: #3A9BFC;
     border: none;
-    color: white;
+    color: $white;
     padding: 5px 32px;
     text-align: center;
     text-decoration: none;

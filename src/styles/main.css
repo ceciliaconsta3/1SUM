@@ -10,12 +10,15 @@ Primary use:    Teams
 * When watching a directory, the watcher will compile all files not prefixed with an underscore.
 * Those files are partials and are just used for breaking up scss into digestible snippets for importation
 */
+/* Color Pallette*/
+/* Box Shadow */
+/* Backgrounds */
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 @import url("https://fonts.googleapis.com/css?family=Lora");
 .button {
   background-color: #3A9BFC;
   border: none;
-  color: white;
+  color: #f7f7f7;
   padding: 5px 32px;
   text-align: center;
   text-decoration: none;
@@ -65,8 +68,41 @@ Primary use:    Teams
 
 .card-body,
 .card-footer {
-  background: white;
+  background: #f7f7f7;
   padding: 10px 50px 0 50px;
+}
+
+/***** HOME CARD EXAMPLE ******
+*******************/
+.home-notepad,
+.home-notepad div,
+.home-card-text,
+.home-card-footer,
+.home-btn-add,
+.home-btn-clear {
+  background-color: black;
+  color: #f7f7f7;
+}
+
+.home-card-footer {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+}
+
+.home-notepad {
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
+}
+
+.cover-notepad-form {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.cover-notepad-form:focus {
+  background: #f7f7f7;
 }
 
 /* Color Pallette*/
@@ -83,25 +119,28 @@ Primary use:    Teams
 
 @keyframes changing-background {
   0% {
-    background-color: #3A9BFC;
+    background-position: top left;
   }
-  25% {
-    background-color: #fa2b7e;
-  }
-  45% {
-    background-color: red;
-  }
-  65% {
-    background-color: orange;
-  }
-  85% {
-    background-color: #67f428;
+  50% {
+    background-position: bottom right;
   }
   100% {
-    background-color: #3A9BFC;
+    background-position: top left;
   }
 }
 
+@keyframes bobbing {
+  0% {
+    transform: translateY(35px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Color Pallette*/
+/* Box Shadow */
+/* Backgrounds */
 /*** Cover ***/
 @media (min-width: 48em) {
   .masthead-brand {
@@ -112,16 +151,19 @@ Primary use:    Teams
   }
 }
 
-@media screen and (max-width: 500px) {
-  nav {
-    display: none;
-  }
+html {
+  background: #f7f7f7;
 }
 
-@media screen and (min-width: 790px) {
-  .fancy-header {
-    font-size: 10rem;
-  }
+main,
+footer {
+  color: black;
+}
+
+a,
+a:focus,
+a:hover {
+  color: #f7f7f7;
 }
 
 h1,
@@ -158,75 +200,32 @@ p {
   color: black;
 }
 
+.fancy-background {
+  color: #fff;
+}
+
+.fancy-header h1 {
+  font-size: 8rem;
+}
+
 footer p {
   font-size: 0.75rem;
+}
+
+.home-card-text {
+  padding: 30px;
+  text-align: left;
+  height: 300px;
 }
 
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
-/***** FOOTER *****/
-footer {
-  text-align: center;
-}
-
-.form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
-}
-
-.form-signin .checkbox {
-  font-weight: 400;
-}
-
-.form-signin .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  font-size: 16px;
-}
-
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.cover-notepad-form {
-  padding: 10px;
-  border: none;
-  outline: none;
-  width: 100%;
-}
-
-.cover-notepad-form:focus {
-  background: #f7f7f7;
-}
-
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
 /***** GENERAL ******
 *******************/
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
 body {
   padding: 0;
 }
@@ -245,7 +244,6 @@ h2 {
   -webkit-box-pack: center;
   justify-content: center;
   color: #fff;
-  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
   background: #107895;
 }
 
@@ -253,21 +251,26 @@ h2 {
   max-width: 42em;
 }
 
-/***** CHANGING HOME BACKGROUND ******
+/***** HOME BACKGROUND ******
 *************************************/
 .fancy-background {
   background: #3A9BFC;
+  background: linear-gradient(130deg, #fa2b7e, orange, #67f428, #3A9BFC);
+  background-size: 600% 600%;
   height: 100vh;
-  animation: changing-background 8s  infinite;
+  animation: changing-background 15s ease-in  infinite;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .fancy-header {
-  font-size: 5rem;
   margin: 40% auto;
-  flex-grow: 1;
+}
+
+.fancy-header .fa-chevron-down {
+  margin-top: 40%;
+  animation: bobbing 1.5s infinite;
 }
 
 /***** HEADER ******
@@ -320,28 +323,15 @@ nav button {
   border-bottom-color: #fff;
 }
 
-/***** NOTEPAD ******
-*******************/
-.home-card-footer {
-  display: inline-flex;
-  padding: 0;
-  border: 0;
-}
-
-.home-card-text {
-  padding: 30px;
-  text-align: left;
-  height: 300px;
-}
-
-.home-notepad {
-  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
-}
-
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
 .login {
+  background: #3A9BFC;
+  color: #f7f7f7;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -353,12 +343,6 @@ nav button {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background: #107895;
-}
-
-.login-wrapper {
-  background: white;
-  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
 }
 
 .loader {
@@ -371,5 +355,35 @@ nav button {
   height: 75px;
   margin: 7% auto;
   animation: loader-spin 1s linear infinite alternate-reverse;
+}
+
+/***** LOGIN FORM ******
+*******************/
+.form-signin {
+  font-size: 2rem;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 /*# sourceMappingURL=main.css.map */

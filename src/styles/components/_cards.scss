@@ -13,6 +13,44 @@ margin-bottom: 1rem;
 
 .card-body,
 .card-footer {
-  background: white;
+  background: $white;
   padding: 10px 50px 0 50px;
+}
+
+
+
+/***** HOME CARD EXAMPLE ******
+*******************/
+.home-notepad,
+.home-notepad div,
+.home-card-text,
+.home-card-footer,
+.home-btn-add,
+.home-btn-clear
+{
+  background-color: black;
+  color: $white;
+}
+
+.home-card-footer {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+}
+
+.home-notepad{
+  box-shadow: $container-shadow;
+}
+
+
+
+
+.cover-notepad-form {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  &:focus {
+      background: $white;
+  }
 }

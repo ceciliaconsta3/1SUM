@@ -1,6 +1,11 @@
 @import "../helpers/variables";
 
 .login {
+  background: $blue;
+  color: $white;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -12,13 +17,6 @@
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background: $cool-background;
-}
-
-.login-wrapper {
-  background: white;
-  //box-shadow: 0px 8px 48px -1px #000;
-  box-shadow: $container-shadow;
 }
 
 .loader {
@@ -31,4 +29,36 @@
   height: 75px;
   margin: 7% auto;
   animation: loader-spin 1s linear infinite alternate-reverse;
+}
+
+
+/***** LOGIN FORM ******
+*******************/
+.form-signin {
+  font-size: 2rem;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
