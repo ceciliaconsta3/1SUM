@@ -3,15 +3,6 @@
 
 /***** GENERAL ******
 *******************/
-html {
-  background: $white;
-}
-a,
-a:focus,
-a:hover {
-  color: $white;
-}
-
 body {
   padding: 0;
 }
@@ -51,23 +42,17 @@ infinite;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #fff;
 }
 
 .fancy-header {
   margin: 40% auto;
   // flex-grow: 1;
-  h1 {
-    font-size: 8rem;
-  }
 
   .fa-chevron-down {
     margin-top: 40%;
     animation: bobbing 1.5s infinite;
   }
 }
-
-
 
 .fancy-nav {
   display: none;
@@ -119,23 +104,4 @@ nav button {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
-}
-
-
-/***** NOTEPAD ******
-*******************/
-.home-card-footer {
-  display: inline-flex;
-  padding: 0;
-  border: 0;
-}
-
-.home-card-text {
-  padding: 30px;
-  text-align: left;
-  height: 300px;
-}
-
-.home-notepad{
-  box-shadow: $container-shadow;
 }

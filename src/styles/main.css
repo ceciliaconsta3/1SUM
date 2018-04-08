@@ -72,6 +72,28 @@ Primary use:    Teams
   padding: 10px 50px 0 50px;
 }
 
+/***** HOME CARD EXAMPLE ******
+*******************/
+.home-notepad,
+.home-notepad div,
+.home-card-text,
+.home-card-footer,
+.home-btn-add,
+.home-btn-clear {
+  background-color: black;
+  color: #f7f7f7;
+}
+
+.home-card-footer {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+}
+
+.home-notepad {
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
+}
+
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
@@ -118,6 +140,21 @@ Primary use:    Teams
   }
 }
 
+html {
+  background: #f7f7f7;
+}
+
+main,
+footer {
+  color: black;
+}
+
+a,
+a:focus,
+a:hover {
+  color: #f7f7f7;
+}
+
 h1,
 h2,
 h3,
@@ -152,8 +189,22 @@ p {
   color: black;
 }
 
+.fancy-background {
+  color: #fff;
+}
+
+.fancy-header h1 {
+  font-size: 8rem;
+}
+
 footer p {
   font-size: 0.75rem;
+}
+
+.home-card-text {
+  padding: 30px;
+  text-align: left;
+  height: 300px;
 }
 
 /* Color Pallette*/
@@ -218,16 +269,6 @@ footer {
 /* Backgrounds */
 /***** GENERAL ******
 *******************/
-html {
-  background: #f7f7f7;
-}
-
-a,
-a:focus,
-a:hover {
-  color: #f7f7f7;
-}
-
 body {
   padding: 0;
 }
@@ -265,15 +306,10 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #fff;
 }
 
 .fancy-header {
   margin: 40% auto;
-}
-
-.fancy-header h1 {
-  font-size: 8rem;
 }
 
 .fancy-header .fa-chevron-down {
@@ -333,24 +369,6 @@ nav button {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
-}
-
-/***** NOTEPAD ******
-*******************/
-.home-card-footer {
-  display: inline-flex;
-  padding: 0;
-  border: 0;
-}
-
-.home-card-text {
-  padding: 30px;
-  text-align: left;
-  height: 300px;
-}
-
-.home-notepad {
-  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
 }
 
 /* Color Pallette*/
