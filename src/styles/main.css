@@ -287,7 +287,6 @@ h2 {
   -webkit-box-pack: center;
   justify-content: center;
   color: #fff;
-  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
   background: #107895;
 }
 
@@ -315,10 +314,6 @@ h2 {
 .fancy-header .fa-chevron-down {
   margin-top: 40%;
   animation: bobbing 1.5s infinite;
-}
-
-.fancy-nav {
-  display: none;
 }
 
 /***** HEADER ******
