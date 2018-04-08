@@ -41,3 +41,16 @@ margin-bottom: 1rem;
 .home-notepad{
   box-shadow: $container-shadow;
 }
+
+
+
+
+.cover-notepad-form {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  &:focus {
+      background: $white;
+  }
+}

@@ -155,6 +155,17 @@ footer p {
   box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
 }
 
+.cover-notepad-form {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.cover-notepad-form:focus {
+  background: #f7f7f7;
+}
+
 /* Color Pallette*/
 /* Box Shadow */
 /* Backgrounds */
