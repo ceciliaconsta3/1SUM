@@ -6,14 +6,8 @@
   width: 100vw;
   height: 100%;
   height: 100vh;
-  display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
-  -ms-flex-align: center;
-  -ms-flex-pack: center;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -35,30 +29,122 @@
 /***** LOGIN FORM ******
 *******************/
 .form-signin {
-  font-size: 2rem;
+  font-size: 1rem;
   width: 100%;
-  max-width: 330px;
-  padding: 15px;
   margin: 0 auto;
 }
 
+.form-signin input {
+  text-align: inherit;
+  outline: none;
+  border: none;
+  padding: 20px 20px;
+}
+
+button[type='submit'] {
+  width: 100%;
+  border: none;
+  background-color: $tan;
+  padding: 18px 0;
+  cursor: pointer;
+  color: black;
+}
+
+.feedback-success {
+  font-size: 1rem;
+}
 .form-signin .form-control {
     position: relative;
-    box-sizing: border-box;
     height: auto;
-    padding: 10px;
     font-size: 16px;
 }
 
 
-.form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
 
-.form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
+//////////////////////From example css sheet
+// :root{
+//   --background-color: #3a9bfc/*#3E92CC*/;
+//   --main-color: #fff;
+//   --secondary-color: #e1cca2;
+//   --text-color: black;
+// }
+// * {
+// font-family: 'Nunito', sans-serif;
+// font-size: 16px;
+// font-size: 16px;
+// color: var(--text-color);
+// box-sizing: border-box;
+// }
+
+// body {
+// background-color: var(--background-color);
+// }
+
+// /***** FORM *****/
+// form {
+// display: flex;
+// height: 100vh;
+// top: 0;
+// left: 0;
+// position: absolute;
+// width: 100%;
+// }
+
+// .formInstructions {
+//   color: var(--main-color);
+//   font: bold 1.5em bold;
+//   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+// }
+// .formWrapper,
+// .formField {
+//   text-align: center;
+//   width: 300px;
+//   margin: auto;
+//   border-radius: 3px;
+//   overflow: hidden;
+// }
+
+// .formField {
+//   background-color: var(--main-color);
+// }
+
+// .formInput {
+// background: none;
+// border: none;
+// display: block;
+// width: 100%;
+// padding: 30px 20px;
+// outline: none;
+// }
+
+// .formInput:first-child {
+// border-bottom: 1px solid var(--main-color);
+// }
+
+// .formInput::placeholder {
+// color: #9EA39E;
+// }
+
+// button[type='submit'] {
+//   width: 100%;
+//   border: none;
+//   background-color: var(--secondary-color);
+//   color: var(--text-color);
+//   padding: 18px 0;
+//   cursor: pointer;
+// }
+
+// button[type='submit']:hover {
+// background-color: var(--secondary-color);
+// }
+
+// i.fa-check {
+//   display: none;
+//   align-self: center;
+// }
+
+// .newsletter-success {
+// padding: 50px 0;
+// display: none;
+// }
+

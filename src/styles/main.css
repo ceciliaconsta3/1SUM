@@ -177,7 +177,6 @@ h6 {
 
 p {
   font-family: 'Nunito', serif;
-  font-size: 18px;
 }
 
 .card,
@@ -332,14 +331,8 @@ nav button {
   width: 100vw;
   height: 100%;
   height: 100vh;
-  display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
-  -ms-flex-align: center;
-  -ms-flex-pack: center;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -360,30 +353,34 @@ nav button {
 /***** LOGIN FORM ******
 *******************/
 .form-signin {
-  font-size: 2rem;
+  font-size: 1rem;
   width: 100%;
-  max-width: 330px;
-  padding: 15px;
   margin: 0 auto;
+}
+
+.form-signin input {
+  text-align: inherit;
+  outline: none;
+  border: none;
+  padding: 20px 20px;
+}
+
+button[type='submit'] {
+  width: 100%;
+  border: none;
+  background-color: #e1cca2;
+  padding: 18px 0;
+  cursor: pointer;
+  color: black;
+}
+
+.feedback-success {
+  font-size: 1rem;
 }
 
 .form-signin .form-control {
   position: relative;
-  box-sizing: border-box;
   height: auto;
-  padding: 10px;
   font-size: 16px;
-}
-
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 /*# sourceMappingURL=main.css.map */
