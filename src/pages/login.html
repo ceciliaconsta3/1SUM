@@ -26,10 +26,17 @@
       <form id="login" class="form-signin" method="POST" action="#">
         <img class="mb-4" src="../media/single-white-in-blue.png" alt="" width="+
         " height="50">
-        <p>Sign in to 1SUM</p>
+        <h1 class="formInstructions">Hi, what shall I call you?</h1>
+        <div class="feedback-success">
+          <div class="spinner">
+            <i class="fa fa-check"></i>
+          </div>
+        </div>              
         <label class="sr-only">Name</label>
-        <input type="name" placeholder="GreatEmployee123" class="form-control">    
-        <div>Nice! That name is available</div>
+        <input type="name" placeholder="The Best Employee Ever" class="form-control" autofocus required>   
+        <button type="submit" class="btn btn-default btn-lg btn-block" title="sign-up">Sign Up</button>
+
+
         <!-- Displays if first time user - will need to check cookies and/or browser history/location storage-->
         <!-- Keypress enter is the only way to proceed to the next screen, just type and go-->
         <!-- Will let user know if that name is already in the database-->
@@ -41,27 +48,13 @@
                 <!-- Will display full screen modal-->
         <!-- will send user back to sign in screen--> 
 
-
-        <!-- <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>         
-        <label for="inputTeam" class="sr-only">Team</label>
-        <input type="text" id="inputTeam" class="form-control" placeholder="Team" required>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <button id="button-signin" class="btn btn-lg btn-success btn-block" type="submit">Login</button>
-        <span>Help</span>
-        <span>We emailed you your code, if you don't receive it I'll send it again</span>
-        <button id="button-signin" class="btn btn-lg btn-success btn-block" type="submit">Resend Email</button>
-        <button id="button-signin" class="btn btn-lg btn-success btn-block" type="submit">Edit Email</button>
-        <div class="btn-group login-btn-group">
-          <button id="button-signin" class="btn btn-lg btn-default" type="submit">Sign Up</button>
-          <button id="button-signin" class="btn btn-lg btn-default" type="submit">Forgot Password</button>
-        </div> -->
-
     <!-- Temporary quick navigation-->
-        <a href="../../app/app.html">To Dashboard</a>
+        <a class="feedback" href="../../app/app.html">Dash</a>
+        <a class="feedback" href="../../index.html">Home</a>        
       </form>
     </div>
 
-  <!-- Placed at the end of the body so the page loads faster -->
+
   <script src="../../vendor/jquery/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script> 

@@ -45,3 +45,38 @@ function addNotes() {
 */
 
 
+// FROM examples sheet
+// $('form').submit( function(e) {
+// 	e.preventDefault();
+//   // Display name of user along with thank you message
+//   let name = $('.formInput[name="name"]').val();
+//   let message = "Thanks for signing up!"
+//   // Add a user's name if they've inputted it
+//   if (name!=="") {
+//     message = "Thanks for signing up, " + name + "!";  
+//   }
+//   // Fade out the main form elements upon the initial submit
+//   $('.formInput').fadeOut(500);
+//   $('button[type="submit"]').fadeOut(500, () => {
+//     // Fade in the spinner component
+//     $('.newsletter-success').fadeIn(500);
+//     // Start the spinner animation
+//     $(".spinner").css({
+//        'animation': 'spinner 2s 0s linear'
+//      });
+//     // Actions performed once spinner has finished spinning
+//     setTimeout( () => {
+//       // Fade the checkmark into the spinner
+//       $('i.fa-check').fadeIn(500, () => {
+//         // Wait 500ms
+//         setTimeout( () => {
+//           // Fade the spinner and checkmark out
+//           $('.spinner').fadeOut(500, () => {
+//           // Append the message and fade it in
+//             $(".newsletter-success").append($('<p>').text(message).fadeIn(500));
+//           });
+//         }, 500)
+//       }); 
+//     }, 2200);
+//   });
+// });
