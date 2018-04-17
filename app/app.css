@@ -69,11 +69,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lora', sans-serif;
 }
 
 p {
-  font-family: 'Nunito', serif;
+  font-family: 'Lora', serif;
 }
 
 .card,
@@ -173,6 +173,12 @@ footer p {
   box-sizing: border-box;
 }
 
+.temp-link,
+.temp-link:hover,
+.temp-link:active {
+  color: #107895;
+}
+
 .app {
   background-color: #f7f7f7;
   min-height: 100vh;
@@ -219,7 +225,7 @@ footer p {
   margin: 0 auto;
   background: #3A9BFC;
   color: #f7f7f7;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lora', sans-serif;
 }
 
 .row-note {
@@ -237,7 +243,7 @@ footer p {
   padding: 0px;
   margin: 0 auto;
   color: black;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lora', sans-serif;
 }
 
 .alt {

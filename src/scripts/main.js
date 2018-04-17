@@ -36,6 +36,26 @@ function addNotes() {
     }
 }
 
+// Refresh button
+document.getElementById("login").addEventListener("submit", function(e) {
+    e.preventDefault();
+    var userName = document.getElementById("user-name");
+    var msg = document.getElementById("login-header");
+    var chk = document.getElementById("login-checkmark");
+    msg.innerHTML = "Welcome, " + userName.value + "!";
+    // temporary form reset 
+    userName.value = "";
+});
+
+
+
+
+
+
+
+
+
+
 
 
 /* function maxNotes() {

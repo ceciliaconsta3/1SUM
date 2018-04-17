@@ -17,9 +17,13 @@ Primary use:    Teams
     box-sizing:  border-box;
   }
   
-a {
-  color: $dark-grey;
+.temp-link,
+.temp-link:hover,
+.temp-link:active,
+{
+  color: $dark-blue;
 }
+
 .app {
   background-color: $white;
   min-height: 100vh;
@@ -65,7 +69,7 @@ cursor: pointer;
   margin: 0 auto;
   background: $blue;
   color: $white;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lora', sans-serif;
 }
 .row-note {
   text-align: center;
@@ -82,7 +86,7 @@ cursor: pointer;
   padding: 0px;
   margin: 0 auto;
   color: black;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lora', sans-serif;
 }
 
 
