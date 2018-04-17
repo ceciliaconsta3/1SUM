@@ -7,102 +7,108 @@ Assigned to:    Cecilia C Constantine
 Primary use:    Teams 
 -------------------------------------------------------------------*/
 
-@import "../src/styles/components/buttons";
+@import "../src/sass/partials/buttons";
 // @import "components/loader";
-@import "../src/styles/components/type";
-@import "../src/styles/components/cards";
-
-@import "../src/styles/helpers/variables";
+@import "../src/sass/partials/type";
+@import "../src/sass/partials/cards";
+@import "../src/sass/partials/variables";
 
 * {
     box-sizing:  border-box;
   }
   
-  .app {
-    background-color: $white;
-    min-height: 100vh;
-    min-height: 100%; /* fallback */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: stretch;
-    flex-wrap: nowrap;
-  }
-  
-  .app-header-button {
-    height: 20px;
-    width: 30px;
-    margin-right: 16px;
-    overflow: visible;
-  }
-  
-  .app-header .app-header-button {
-  width: 24px;
-  height: 24px;
-  margin-right: 16px;
-  text-indent: -30000px;
-  overflow: hidden;
-  opacity: 0.54;
-  -webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
-  transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
-  border: none;
-  outline: none;
-  cursor: pointer; 
-  }
-  
-  .album {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    background-color: $white;
-  }
-  
-  .row-heading {
-    text-align: center;
-    width: 100%;
-    padding: .75rem;
-    margin: 0 auto;
-    background: $blue;
-    color: $white;
-    font-family: 'Nunito', sans-serif;
-  }
-  .row-note {
-    text-align: center;
-    width: 100%;
-    padding: .25rem;
-    margin: 0 auto;
-    background: $tan;
-    color: black;
-  }
-  
-  .row-note p {
-    text-align: center;
-    width: 100%;
-    padding: 0px;
-    margin: 0 auto;
-    color: black;
-    font-family: 'Nunito', sans-serif;
-  }
-  
+.temp-link,
+.temp-link:hover,
+.temp-link:active,
+{
+  color: $dark-blue;
+}
 
-  
-  .alt {
-    background: $grey;
-  }
-  
-  
-  header {
-    background-color: $blue;
-    box-shadow: $app-shadow;
-    color: $white;
-    width: 100vw;
-    // fallback
-    width: 100%; 
-    height: 60px;
-    padding: 10px 20px;
-    font-size: 18px;
-    display: flex;
-    position: fixed;
-  }
+.app {
+  background-color: $white;
+  min-height: 100vh;
+  min-height: 100%; /* fallback */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: stretch;
+  flex-wrap: nowrap;
+}
+
+.app-header-button {
+  height: 20px;
+  width: 30px;
+  margin-right: 16px;
+  overflow: visible;
+}
+
+.app-header .app-header-button {
+width: 24px;
+height: 24px;
+margin-right: 16px;
+text-indent: -30000px;
+overflow: hidden;
+opacity: 0.54;
+-webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+border: none;
+outline: none;
+cursor: pointer; 
+}
+
+.album {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: $white;
+}
+
+.row-heading {
+  text-align: center;
+  width: 100%;
+  padding: .75rem;
+  margin: 0 auto;
+  background: $blue;
+  color: $white;
+  font-family: 'Lora', sans-serif;
+}
+.row-note {
+  text-align: center;
+  width: 100%;
+  padding: .25rem;
+  margin: 0 auto;
+  background: $tan;
+  color: black;
+}
+
+.row-note p {
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+  margin: 0 auto;
+  color: black;
+  font-family: 'Lora', sans-serif;
+}
+
+
+
+.alt {
+  background: $grey;
+}
+
+
+header {
+  background-color: $blue;
+  box-shadow: $app-shadow;
+  color: $white;
+  width: 100vw;
+  // fallback
+  width: 100%; 
+  height: 60px;
+  padding: 10px 20px;
+  font-size: 18px;
+  display: flex;
+  position: fixed;
+}
   
 main {
   width: 100vw;

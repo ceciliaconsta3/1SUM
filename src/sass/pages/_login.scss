@@ -1,4 +1,4 @@
-@import "../helpers/variables";
+@import "../partials/variables";
 
 .login {
   background: $blue;
@@ -22,9 +22,8 @@
   width: 75px;
   height: 75px;
   margin: 7% auto;
-  animation: loader-spin 1s linear infinite alternate-reverse;
+  animation: loader-spin 1s linear infinite;
 }
-
 
 /***** LOGIN FORM ******
 *******************/
@@ -59,6 +58,9 @@ button[type='submit'] {
     font-size: 16px;
 }
 
+.approved {
+  visibility: hidden;
+}
 
 
 //////////////////////From example css sheet
@@ -69,7 +71,7 @@ button[type='submit'] {
 //   --text-color: black;
 // }
 // * {
-// font-family: 'Nunito', sans-serif;
+// font-family: 'Lora', sans-serif;
 // font-size: 16px;
 // font-size: 16px;
 // color: var(--text-color);

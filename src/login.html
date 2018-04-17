@@ -8,7 +8,7 @@
     <meta name="author" content="Cecilia Constantine">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>1Sum - Login to your account</title>
+    <title>1Sum - Login</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
@@ -23,18 +23,20 @@
   <!-- TODO create login in experience that does not involve the employee to remember any passwords-->
   <body class="text-center login">
     <div class="login-wrapper">
-      <form id="login" class="form-signin" method="POST" action="#">
-        <img class="mb-4" src="../media/single-white-in-blue.png" alt="" width="+
-        " height="50">
-        <h1 class="formInstructions">Hi, what shall I call you?</h1>
+      <!-- Login Form-->
+      <form id="login" class="form-signin">
+        <h1 id="login-header" class="formInstructions">Hi, what shall I call you?</h1>
+
+        <!-- Validation/Feedback-->
         <div class="feedback-success">
-          <div class="spinner">
-            <i class="fa fa-check"></i>
-          </div>
-        </div>              
+          <div class="spinner loader" aria-hidden hidden></div>
+          <i id="login-checkmark" class="fa fa-check" aria-hidden hidden></i>
+        </div>
+
+        <!-- User Input -->              
         <label class="sr-only">Name</label>
-        <input type="name" placeholder="The Best Employee Ever" class="form-control" autofocus required>   
-        <button type="submit" class="btn btn-default btn-lg btn-block" title="sign-up">Sign Up</button>
+        <input id="user-name" type="text" placeholder="The Best Employee Ever" class="form-control" autofocus required >   
+        <button type="submit" class="btn btn-default btn-lg btn-block" title="to Sign Up">Sign Up</button>
 
 
         <!-- Displays if first time user - will need to check cookies and/or browser history/location storage-->
@@ -49,8 +51,8 @@
         <!-- will send user back to sign in screen--> 
 
     <!-- Temporary quick navigation-->
-        <a class="feedback" href="../app/app.html">Dash</a>
-        <a class="feedback" href="../index.html">Home</a>        
+        <a href="../app/app.html">Dash</a>
+        <a href="../index.html">Home</a>        
       </form>
       
     </div>
