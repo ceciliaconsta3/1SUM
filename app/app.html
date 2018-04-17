@@ -9,14 +9,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="1Sum - PWA for casual communication between remote teams">
+    <title>1Sum - Dashboard</title>
     <link rel="icon" href="../favicon.ico">
 
-    <title>1Sum - Dashboard</title>
-
-    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../dist/css/app.min.css">
+    <!-- Vendors -->
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom stles-->
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body class="app">
@@ -28,8 +30,7 @@
     <header class="app-header">
         <h1 class="app-header-title">1 Sum</h1>
         <div class="btn-group">
-          <button id="nav-button" class="app-header-button" aria-label="Navigation">Nav</button>
-          <button id="date-button" class="app-header-button" aria-label="Date">Calendar</button>          
+            <button id="refresh-btn" class="app-header-button" aria-label="Refresh">Refresh</button>      
         </div>
 
     </header>
@@ -37,18 +38,23 @@
     <marquee>Daily Team Updates | Announcements</marquee>
 
     <!-- Loading Indicator-->
-    <div class="loader"></div>
+    <div class="spiner"></div>
 
 
     <!-- Cards: Data goes here-->
     <main role="main">
-        <div class="card-group">
-            <div id="note-container" class="row card">
-                <!-- Dialog Container: add New Cards here -->                  
-                <div class="card-body">
+        <div class="card-group cardTemplate">
+            <div id="note-container" class="row card "> <!-- cards container-->
+                <!-- Dialog Container: add New Cards here -->  
+                <div class="dialog-container" hidden></div>
+
+                <!-- demo card-->
+                <div class="card-body form-check-inline" >
+                    <button id="delete-btn" class="btn"><i class="fa fa-trash"></i></button>                   
                     <p id="note" class="card-text">Redesigned the front-end of client x's website.</p>
-                    <p id="timestamp" class="card-footer text-small text-muted">Tim @ 7pm EST</p>
+                    <p id="timestamp" class="text-small text-muted" onLoad="timestamp();"></p>
                 </div>
+
             </div>
         </div><!-- end of card-group row -->
 
@@ -59,20 +65,29 @@
                     <textarea id="#note-input" rows="4" cols="100" placeholder="Update text here"></textarea>
                     <button class="btn btn-success">Submit</button>
                 </p>
-            </div> -->
-        </div><!-- end of card group
+            </div> 
+        </div>-->
 
+
+        <!-- Temporary quick navigation-->
+        <a class="feedback" href="../../app/app.html">Dash</a>
+        <a class="feedback" href="../src/login.html">Login</a> 
+        <a href="../index.html">Home</a>     
     </main>
+  
+  </form>
 
-    <!-- DELETE WHEN FINALIZED -->
-    <a href="../index.html">Back to home</a>
+    <button id="add-Note" class="btn" style="position: absolute; bottom: 2%; right: 2%; height: 100px; width: 100px; border-radius: 100%;"><i class="fa fa-pencil-square-o fa-5x add-Note"></i></button>
 
+    <!-- Vendors -->
     <script src="../vendor/jquery/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     
     <!-- Custom scripts --> 
-    <script src="../dist/js/all.min.js"></script>
+    <script src="../src/scripts/main.js"></script>
+    <script src="../src/scripts/app.js"></script>
+
 </body>
 
 </html>

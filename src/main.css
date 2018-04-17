@@ -70,6 +70,7 @@ Primary use:    Teams
 .card-footer {
   background: #f7f7f7;
   padding: 10px 50px 0 50px;
+  display: flex;
 }
 
 /***** HOME CARD EXAMPLE ******

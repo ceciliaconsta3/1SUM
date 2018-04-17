@@ -105,6 +105,8 @@ Primary use:    Teams
   }
   
 main {
+  width: 100vw;
+  width: 100%;
   display: block;
   position: absolute;
   top: 25px;
@@ -115,7 +117,8 @@ main {
           flex: 1;
   overflow-x: hidden;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+}
 
 
 marquee {

@@ -130,6 +130,7 @@ footer p {
 .card-footer {
   background: #f7f7f7;
   padding: 10px 50px 0 50px;
+  display: flex;
 }
 
 /***** HOME CARD EXAMPLE ******
@@ -257,6 +258,8 @@ header {
 }
 
 main {
+  width: 100vw;
+  width: 100%;
   display: block;
   position: absolute;
   top: 25px;
