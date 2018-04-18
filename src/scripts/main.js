@@ -39,17 +39,22 @@ function addNotes() {
 // Refresh button
 document.getElementById("login").addEventListener("submit", function(e) {
     e.preventDefault();
-    var userName = document.getElementById("user-name");
-    var msg = document.getElementById("login-header");
-    var chk = document.getElementById("login-checkmark");
+    let userName = document.getElementById("user-name");
+    let msg = document.getElementById("login-header");
+    let chk = document.getElementById("login-checkmark");
+    let form = document.getElementById("login");
     msg.innerHTML = "Welcome, " + userName.value + "!";
     // temporary form reset 
-    userName.value = "";
+    form.className = "hide";
+    document.getElementById("login-contents").innerHTML= 
+    "<i id='login-checkmark' class='fa fa-check' aria-hidden></i>" + 
+    "<div class='spinner loader' aria-hidden></div>";
+    setTimeout(toDashboard, 2000);
 });
 
-
-
-
+function toDashboard() {
+    window.location.replace("../../../app/app.html");
+}
 
 
 

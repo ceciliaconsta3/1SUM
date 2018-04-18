@@ -22,23 +22,19 @@
 
   <!-- TODO create login in experience that does not involve the employee to remember any passwords-->
   <body class="text-center login">
+    <!-- Validation/Feedback-->
+    <div class="feedback-success"></div>
     <div class="login-wrapper">
       <!-- Login Form-->
       <form id="login" class="form-signin">
         <h1 id="login-header" class="formInstructions">Hi, what shall I call you?</h1>
-
-        <!-- Validation/Feedback-->
-        <div class="feedback-success">
-          <div class="spinner loader" aria-hidden hidden></div>
-          <i id="login-checkmark" class="fa fa-check" aria-hidden hidden></i>
-        </div>
-
+        <div id="login-contents">
         <!-- User Input -->              
         <label class="sr-only">Name</label>
         <input id="user-name" type="text" placeholder="The Best Employee Ever" class="form-control" autofocus required >   
         <button type="submit" class="btn btn-default btn-lg btn-block" title="to Sign Up">Sign Up</button>
-
-
+      </div>
+      </form>
         <!-- Displays if first time user - will need to check cookies and/or browser history/location storage-->
         <!-- Keypress enter is the only way to proceed to the next screen, just type and go-->
         <!-- Will let user know if that name is already in the database-->
@@ -50,11 +46,9 @@
                 <!-- Will display full screen modal-->
         <!-- will send user back to sign in screen--> 
 
-    <!-- Temporary quick navigation-->
-        <a href="../app/app.html">Dash</a>
-        <a href="../index.html">Home</a>        
-      </form>
-      
+      <!-- Temporary quick navigation-->
+      <a href="../app/app.html">Dash</a>
+      <a href="../index.html">Home</a>       
     </div>
 
 
