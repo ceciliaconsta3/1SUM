@@ -31,19 +31,26 @@
                 <div class="fancy-header text-center">
                     <span class="cover-above-fold">1</span>       
                     <i class="fa fa-2x fa-chevron-down" aria-hidden="true"></i>
-                </div>
-                <!-- <nav class="fancy-nav">
-                    <h2 class="fixed">1Sum</h2>
-                    <button class="btn btn-warning float-right"><a href="src/pages/login.html">Login</a></button>
-                </nav> -->
+
+                <!-- MOVING NAV -->
+                <nav class="fancy-moving-nav">
+                    <a href="#">
+                        <img src="src/media/single-white-in-blue.png">
+                        1SUM
+                    </a> 
+                    <a class="btn btn-warning float-right" href="src/login.html">Login</a>                     
+                    <a class="btn btn-info float-right" href="src/login.html">About</a> 
+
+                </nav>  
+                </div>                       
             </section>
         </header>
 
 
     <!-- Main-->
-    <main role="main" class="container-fluid">
-        <div class="d-md-flex row">
-            <header class="navbar home-text col-lg-6 p3">
+    <main role="main">
+            <!-- HEADER -->
+            <header class="normal-header">
                 <div>
                     <a href="#">
                         <img src="src/media/single-white-in-blue.png">
@@ -52,39 +59,58 @@
                     <a class="btn btn-warning float-right" href="src/login.html">Login</a> 
                 </div>           
             </header>  
-                       
+
+            <!-- ABOUT CONTAINER-->
+            <div class="row notepad col-lg-6 text-left">
+
+            <!-- LEADING TEXT -->
             <article class="home-text lead col-lg-6 p3">             
-                <h1>1SUM your remote team</h1>
-                <p>1SUM is an unobtrusive way to get a daily glimpse into the progress of your remote workers/team members.</p>
-                <p>Here's how it works. Write a quick note about the task you're currently working on. 1Sum will save all of these blurbs for you and at the end of the day you can make a neat little summary, sort  of like a Twitter update, and post up for your team.</p>
-                <p>This way, you can keep note your progress along the way without forgetting the minor yet oh-so-important details. And like a real sticky, only you can see your scattered notes and thought process.</p>
-                <p>Login to start saving your blurbs and to see what your invisible team is up to.
-                </p>
-            </article><!-- end of text -->
-            <div class="notepad col-lg-6 text-left">
+                    <h1>1SUM your remote team</h1>
+                    <p>1SUM is an unobtrusive way to get a daily glimpse into the progress of your remote workers/team members.</p>
+                    <p>Here's how it works. Write a quick note about the task you're currently working on. 1Sum will save all of these blurbs for you and at the end of the day you can make a neat little summary, sort  of like a Twitter update, and post up for your team.</p>
+                    <p>This way, you can keep note your progress along the way without forgetting the minor yet oh-so-important details. And like a real sticky, only you can see your scattered notes and thought process.</p>
+                    <p>Login to start saving your blurbs and to see what your invisible team is up to.
+                    </p>
+                </article><!-- end of text -->
+
+                <!-- NOTEPAD-->
                 <div class="card home-notepad">
-                    <div class="card-header">Notes</div>
-                    <ul id="home-card" class="home-card-text"></ul>
-                    <form id="home-form">
-                        <input id="home-note-input" type="text" class="cover-notepad-form text-muted" placeholder="Type a blurb here..." autofocus>
-                    </form>
-                    <div class="card-footer home-card-footer">
-                        <button id="home-add" class="home-btn-add card-footer btn btn-success text-center">Add</button>
-                        <button id="home-clear" class="home-btn-clear card-footer btn btn-primary text-center">Clear</button>     
-                    </div>               
-                </div>
-            </div>
-        </div>
+                        <div class="card-header">Notes</div>
+                        <ul id="home-card" class="home-card-text"></ul>
+                        <form id="home-form">
+                            <input id="home-note-input" type="text" class="cover-notepad-form text-muted" placeholder="Type a blurb here..." autofocus>
+                        </form>
+                        <div class="card-footer home-card-footer">
+                            <button id="home-add" class="home-btn-add card-footer btn btn-success text-center">Add</button>
+                            <button id="home-clear" class="home-btn-clear card-footer btn btn-primary text-center">Clear</button>     
+                        </div>               
+                    </div>
+
+                </div><!-- notepad end-->
+
+
+
+
     </main>
 
+    <!-- FOOTER-->
     <footer class="mastfoot mt-auto">
         <div class="inner">
+            <!-- ICONS -->
+            <div class="footer-icons">
                 <i class="fa fa-twitter"><a title="to Twitter page" href="https://twitter.com/PopVia"></a></i>
-                <!-- website is currently down
-                    <i class="fa fa-globe"></i>
-                -->
-                <i class="fa fa-github"><a title="to GitHub page" href="https://github.com/ceciliaconsta3/PopVia"></a></i>
-          <p>&copy; <span id="copyright-year">2018 </span>Created by <a href="https://ceciliaconstantine.com">Cecilia</a></p>
+                <i class="fa fa-github"><a title="to GitHub page" href="https://github.com/ceciliaconsta3/PopVia"></a>
+                </i>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li>Created by
+                        <a href="https://ceciliaconstantine.com">Cecilia</a>
+                    </li> 
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; <span id="copyright-year">2018 </span></div>
         </div>
       </footer>
 

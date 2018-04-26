@@ -20,6 +20,10 @@ Primary use:    Teams
   font-size: 0.75rem;
 }
 
+.btn {
+  border-radius: 1rem;
+}
+
 .btn > a {
   text-decoration: none;
 }
