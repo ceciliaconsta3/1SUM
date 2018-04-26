@@ -76,6 +76,11 @@ p {
   font-family: 'Lora', serif;
 }
 
+.cover-above-fold {
+  font-size: 10rem;
+  display: inherit;
+}
+
 .card,
 .card > button {
   color: black;
