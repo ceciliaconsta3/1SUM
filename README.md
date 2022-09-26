@@ -1,7 +1,16 @@
-[![Waffle.io - Columns and their card count](https://badge.waffle.io/ceciliaconsta3/PopVia.png?columns=all)](https://waffle.io/ceciliaconsta3/PopVia?utm_source=badge)
-# 1SUM
-:construction: COMING SOON!
+# 1SUM :construction:
 
+note-based web app to save user notes and login info to a MySQL database. Designed and implemented project with the purpose of easing communication between remote team members using Git, Waffle.io, and Slack for daily channel updates and version control  
+
+## Technologies
+* Bootstrap
+* CSS/SCSS
+* Spring Boot
+* Hibernate
+* MySQL
+* Git
+* Waffle.io
+* Slack
 
 
 ## License
